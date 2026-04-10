@@ -1,0 +1,1059 @@
+/* public/css/style.css */
+
+
+:root {
+    --primary-green: #02490b;
+    --primary-green-dark: #013d08;
+   
+}
+/* Force same font everywhere */
+* {
+    font-family: Arial, sans-serif !important;
+}
+
+h1, h2, p, a {
+    font-family: inherit;
+}
+
+/* Header */
+.site-header {
+    background-color: #2d7a3e; /* Green header */
+    height: 120px;             /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;          /* horizontal spacing */
+    position: relative;
+    z-index: 10;
+} /* ===== GLOBAL PRIMARY COLOR ===== */
+ :root { --primary-color: #27ae60; /* same as your CTA buttons */ }
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 20px 50px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+/* Navigation */
+/* NAVIGATION CONTAINER */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 45px; /* 🔥 controls spacing between items */
+}
+
+/* NAV LINKS */
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+header nav a:hover {
+    color: #d4f5dc; /* lighter green hover */
+    text-decoration: none;
+    border-bottom: 2px xolid #d4f5dc;
+    padding-bottom: 3px;
+}
+
+
+
+/* Menu toggle */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ===== BUTTONS (match header) ===== */
+.btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Footer */
+footer { 
+    width: 100%; 
+    padding: 40px 50px; 
+    background: #2d7a3e !important;
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+/* Hero Section */
+
+
+
+.hero h1 { 
+    font-size: 2.0rem;  /* smaller heading */
+    margin-bottom: 25px; /* reduced space below heading */
+}
+
+.hero-subtitle, .hero-description {
+    font-size: 1.2rem;/* smaller paragraph text */
+    line-height: 1.4;  /* tighter line spacing */
+    max-width: 650px;  /* slightly narrower for readability */
+    margin-bottom: 10px; /* reduced spacing between paragraphs */
+    color:white !important;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;  /* smaller gap between buttons */
+    flex-wrap: wrap;
+    margin-top: 10px; /* small top margin for buttons */
+}
+
+.hero .btn { 
+    padding: 10px 20px; /* smaller buttons */
+    font-size: 0.85rem; /* smaller text */
+    background: #2d7a3e !important; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background 0.3s;
+}
+
+.hero .btn:hover { 
+    background: #013d08
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 1.4rem; }
+    .hero-subtitle, .hero-description { font-size: 0.85rem; }
+    .hero .btn { padding: 4px 8px; font-size: 0.8rem; }
+}
+
+/*backgroung image*/
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url('/images/Kiambere-after.webp') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    padding: 0 15px;
+     text-align: center;
+}
+
+/* DARK OVERLAY for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3); /* adjust darkness here */
+}
+
+/* CONTENT */
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    padding: 15px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.hero-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+   
+}
+
+.hero-buttons .btn {
+    margin: 10px;
+}
+
+
+/*blinking cursor effect*/
+#typing-subtitle::after {
+    content: "|";
+    animation: blink 1s infinite;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+/* Cards container */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px; /* spacing after section text */
+}
+
+/* Individual card */
+.card {
+    background: #f9f9f9; /* subtle light grey so it stands out on white page */
+    padding: 20px;
+    width: 280px; /* slightly wider for readability */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: inherit; /* keep same font as rest of page */
+}
+
+/* Card title */
+.card h3 {
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+    color: #02490b; /* dark green to match forestry theme */
+}
+
+/* Card text */
+.card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333; /* readable on light background */
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+/* Menu toggle (hidden by default) */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Navigation */
+header nav {
+    display: flex;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* show hamburger */
+    }
+
+    header nav {
+        display: none; /* hide menu */
+        flex-direction: column;
+        width: 100%;
+        background: #02490b;
+        margin-top: 10px;
+    }
+
+    header nav a {
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    header nav.active {
+        display: flex; /* show when clicked */
+    }
+}
+.menu-toggle {
+    margin-left: auto; /* pushes it to the far right */
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+h2 {
+    text-align: center;        /* Center the text */
+    margin-top: 50px;          /* Space above each heading */
+    margin-bottom: 20px;       /* Space below each heading */
+    font-size: 32px;           /* Adjust size as needed */
+    color: #01300f;            /* Dark green to match theme */
+    font-weight: 700;
+}
+h2 + p {
+    text-align: center;
+    max-width: 800px;          /* Limit width for readability */
+    margin: 0 auto 40px auto;  /* Center and add space below */
+    color: #4a6a4a;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.text-block {
+    color: #4a6a4a;     /* same green as "What We Do" */
+    font-family: Arial, sans-serif;
+    font-size: 18px;    /* same size */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+
+
+
+.text-block + ul,
+.text-block + ul li,
+.text-block + ul li::marker {
+    color:#4a6a4a !important;                     /* text and bullets color */
+    font-family: 'YourFont', sans-serif !important; /* match paragraph font */
+    font-size: 1rem !important;                 /* match paragraph size */
+    line-height: 1.8 !important;                /* spacing between lines */
+    list-style-position: inside !important;     /* align bullets nicely */
+}
+
+.text-block + ul li {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.6s forwards;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*image before Walking through partnership*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.image-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.responsive-image {
+    max-width: 100%;
+    max-height: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+/*image about us page */
+
+
+
+
+.how-we-work-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    line-height: 1.8;
+    color:#4a6a4a !important;
+    font-family: 'YourFont', sans-serif !important;
+    font-size: 1rem;
+}
+
+.how-we-work-list li {
+    margin-bottom: 15px;
+}
+
+.how-we-work-list li::marker {
+    color:#4a6a4a !important;
+}
+
+/* List styling */
+.how-we-work-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    line-height: 1.8;
+    color:#4a6a4a;
+    font-family: 'YourFont', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+
+/* List items with fade-in animation */
+.how-we-work-list li {
+    opacity: 0;                      /* start invisible */
+    transform: translateY(20px);     /* slight slide-up */
+    margin-bottom: 15px;
+    animation: fadeInUp 0.6s forwards;
+    animation-delay: calc(var(--i) * 0.2s); /* staggered delay based on --i */
+}
+
+/* Bullet color */
+.how-we-work-list li::marker {
+    color:#4a6a4a;
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Relationship with the organization */
+
+/* Section styling */
+.relationship-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: 'YourFont', sans-serif;
+    color:#4a6a4a;
+}
+
+/* Section title */
+.relationship-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Paragraphs */
+.relationship-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* List styling */
+.relationship-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.8;
+}
+
+/* List items with fade-in animation */
+.relationship-list li {
+    opacity: 0;
+    transform: translateY(20px);
+    margin-bottom: 15px;
+    animation: fadeInUp 0.6s forwards;
+    animation-delay: calc(var(--i) * 0.2s);
+
+    color: #4a6a4a !important; /*font text colour during animation*/
+}
+
+/* Bullet color */
+.relationship-list li::marker {
+    color:#4a6a4a;
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Drop down menu*/
+
+.nav-item.dropdown {
+    position: relative;
+}
+
+/* dropdown box */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* always directly below parent */
+    left: 0;
+    background: #ffffff;
+    min-width: 220px;
+    border-radius: 5px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    z-index: 99999;
+}
+
+/* dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 12px 15px;
+    color: #333 !important;
+    text-decoration: none;
+}
+
+/* hover effect */
+.dropdown-menu a:hover {
+    background: #f2f2f2;
+}
+
+/* show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*image 4*/
+
+/* Container */
+.experience-image-container {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Image */
+.experience-image {
+    display: block;
+    width: 100%;     /* fills container fully */
+    height: auto;
+
+    border-radius: 10px; /* optional */
+}
+
+.experience-image:hover {
+    transform: scale(1.02);
+}
+
+/*image 5*/
+
+.institution-image-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.institution-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+
+    transition: transform 0.3s ease;
+}
+
+.institution-image:hover {
+    transform: scale(1.02);
+}
+
+
+/* ===== ECOSYSTEM SECTION ===== */
+.ecosystem-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; 
+
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
+
+    background: white; /* keep background here */
+}
+
+/* Both columns */
+.ecosystem {
+    flex: 1;
+    max-width: 45%;
+}
+
+.ecosystem-text {
+    flex: 1;
+    max-width: 55%;
+}
+
+/* Left diagram */
+.ecosystem {
+    text-align: center;
+}
+
+/* Flow */
+.ecosystem-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* slightly tighter spacing */
+    margin-top: 20px;
+}
+
+/* Boxes */
+.eco-box {
+    width: 100%;
+    max-width: 200px; /* reduced size */
+    padding: 12px;     /* reduced padding */
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-size: 14px; /* helps text fit */
+    line-height: 1.4;
+}
+
+/* Colors */
+.partners { background: #1b5e20; }
+.spv { background: #43a047; }
+.bgf { background: #2d7a3e; }
+.farmers { background: #596858; }
+
+/* Text side */
+.ecosystem-text {
+    text-align: left;
+}
+
+.ecosystem-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.ecosystem-text ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .ecosystem-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ecosystem,
+    .ecosystem-text {
+        max-width: 100%;
+    }
+
+    .ecosystem-text {
+        text-align: center;
+    }
+}
+
+/* Container block */
+.relationship-container {
+    background: #f5f5f0;
+    padding: 25px 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+/* ===== RELATIONSHIP BLOCK ===== */
+
+/* Container block */
+.relationship-container {
+    background: #f5f5f0;
+    padding: 25px 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* List styling */
+.relationship-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List items */
+.relationship-list li {
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+
+    border-left: 4px solid #2d7a3e;
+    background: white;
+    border-radius: 6px;
+
+    color: #222;
+
+    cursor: pointer;
+
+    /* Smooth interaction */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* Initial animation */
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: calc(var(--i) * 0.15s);
+}
+
+/* Hover (pop-out effect only) */
+.relationship-list li:hover {
+    transform: translateY(-5px) scale(1.02);
+    background-color: #acf4b5;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Full screen centering */
+.relationship-wrapper {
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    min-height: 100vh;             /* full viewport height */
+}
+
+/* Your container (unchanged except optional tweaks) */
+.relationship-container {
+    background: #f5f5f0;
+    padding: 25px 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.about-relationship-section {
+    max-width: 900px;
+    margin: 60px auto; /* centers the whole section */
+    padding: 20px;
+    text-align: center; /* centers heading + paragraph */
+}
+
+/* Heading */
+.about-relationship-section h2 {
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.about-relationship-section p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container card */
+.relationship-container {
+    background: #f5f5f0;
+    padding: 25px 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto; /* centers the card */
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* List styling */
+.relationship-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List items */
+.relationship-list li {
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+
+    border-left: 4px solid #2d7a3e;
+    background: white;
+    border-radius: 6px;
+
+    color: #222;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: calc(var(--i) * 0.15s);
+}
+
+/* Hover pop effect */
+.relationship-list li:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/*ecosystem animation*/
+
+.eco-box {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease forwards;
+}
+
+/* Stagger each box */
+.partners { animation-delay: 0.2s; }
+.spv { animation-delay: 0.5s; }
+.bgf { animation-delay: 0.8s; }
+.farmers { animation-delay: 1.1s; }
+
+.eco-arrow {
+    opacity: 0;
+    animation: fadeUp 0.4s ease forwards;
+}
+
+/* Match arrows between boxes */
+.eco-arrow:nth-of-type(1) { animation-delay: 0.35s; }
+.eco-arrow:nth-of-type(2) { animation-delay: 0.65s; }
+.eco-arrow:nth-of-type(3) { animation-delay: 0.95s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Hover*/
+.eco-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.eco-box:hover{
+box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/*guide arrow*/
+.eco-box:hover + .eco-arrow {
+    color: #02490b;
+    font-weight: bold;
+}
+
+/* FORCE dropdown to work */
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block !important;
+}
+
+.dropdown-menu {
+    top: 100% !important;
+    left: 0;
+}
+
+/*Company diagram*/
+/* Company diagram full-width section */
+.company-diagram-container {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.company-diagram {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*Service page*/
+
+.services-page {
+    padding: 40px 20px;
+}
+
+/* HERO */
+.services-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.services-hero h3 {
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+/* BUTTON */
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #02490b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* INTRO */
+.services-intro {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.service-card {
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.service-card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.role {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+.services-delivery,
+.services-partners,
+.services-cta {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.services-partners ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-partners li {
+    margin: 10px 0;
+}
+
+/* FOOTER NOTE */
+.services-note {
+    margin-top: 80px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
