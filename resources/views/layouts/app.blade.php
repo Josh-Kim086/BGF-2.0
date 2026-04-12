@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <a href="#">Services</a>
+    <a href="{{ route('services') }}">Services</a>
     <a href="#">Contact</a>
 </nav>
 </header>

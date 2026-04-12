@@ -6,13 +6,13 @@
 
     <!-- HERO -->
     <div class="services-hero">
+        <div class="container">
         <h1>Our Services</h1>
         <h3>Professional Forestry Implementation and Management Services</h3>
-        <p>
-            Delivering forestry projects through technical expertise, structured partnerships, and long-term operational commitment.
-        </p>
+        
 
         <a href="/projects" class="btn-primary">Explore Our Projects</a>
+        </div>
     </div>
 
 
@@ -20,10 +20,11 @@
     <div class="services-intro">
         <h2>What We Provide</h2>
         <p>
-            Better Globe Forestry Ltd provides professional forestry and agroforestry services across the full lifecycle of project development and implementation.
-        </p>
-        <p>
-            We act as an implementation and management platform, supporting partners, investors, and landholders through structured project arrangements, ensuring technical quality, operational continuity, and transparent reporting.
+            Better Globe Forestry Ltd provides professional forestry and agroforestry services
+             across the full lifecycle of project development and implementation.
+            We act as an implementation and management platform, supporting partners, investors, 
+            and landholders through structured project arrangements, ensuring technical quality,
+             operational continuity, and transparent reporting.
         </p>
     </div>
 
@@ -94,40 +95,43 @@
     <div class="services-delivery">
         <h2>How Our Services Are Delivered</h2>
         <p>
-            BGF delivers its services within structured project frameworks that may involve investors, landholders, carbon partners, and public-interest entities.
-        </p>
+            BGF delivers its services within structured project frameworks that may involve investors, landholders,
+             carbon partners, and public-interest entities.Assets may be held by dedicated project structures (e.g SPVs).
+             BGF operates as the implementing and management partner.Its roles and responsibilities are defined contractually.
+             This approach ensures clarity of ownership and responsibilities, strong governance and transparency and a 
+             long-term operational reliability.
+            </p>
+    </div>
 
-        <ul>
-            <li>Assets may be held by dedicated project structures (e.g. SPVs)</li>
-            <li>BGF operates as the implementing and management partner</li>
-            <li>Roles and responsibilities are defined contractually</li>
-        </ul>
 
-        <p>
-            This approach ensures clarity of ownership and responsibilities, strong governance and transparency, and long-term operational reliability.
-        </p>
+    <div class="services-partners">
+
+    <div class="partners-image">
+        <img src="{{ asset('images/img6.JPG') }}" alt="Our Partners">
     </div>
 
 
     <!-- WHO WE WORK WITH -->
     <div class="services-partners">
         <h2>Who We Work With</h2>
-        <ul>
-            <li>Investors and project developers</li>
-            <li>Carbon project partners</li>
-            <li>Landowners and concession holders</li>
-            <li>Development organisations and foundations</li>
-            <li>Local communities and farmer groups</li>
-        </ul>
+
+        <div class="partners-container">
+        <div class="partner-card">Investors and project developers</div>
+        <div class="partner-card">Carbon project partners</div>
+        <div class="partner-card">Landowners and concession holders</div>
+        <div class="partner-card">Development organisations and foundations</div>
+        <div class="partner-card">Local communities and farmer groups</div>
+    </div>
     </div>
 
 
     <!-- CTA -->
+    <div class="services-cta-container">
     <div class="services-cta">
         <h2>See Our Work in Practice</h2>
-        <p>Explore how these services are applied across our forestry projects.</p>
         <a href="/projects" class="btn-primary">View Our Projects</a>
     </div>
+</div>
 
 
     <!-- FOOTER NOTE -->
