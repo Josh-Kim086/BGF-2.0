@@ -75,12 +75,14 @@ Ownership of land, trees, carbon credits, or financial returns depends on projec
 </p>
         </div>
         <div class="footer-section">
-            <h3>Quick Links</h3>
-            <p><a href="#">Home</a></p>
-            <p><a href="#">About</a></p>
-            <p><a href="#">Services</a></p>
-            <p><a href="#">Contact</a></p>
-        </div>
+    <h3>Quick Links</h3>
+    <div class="footer-links">
+        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('about') }}">About</a>
+        <a href="{{ route('services') }}">Services</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
         <div class="footer-section">
             <h3>Contact</h3>
             <p>Address: Nairobi, Kenya</p>

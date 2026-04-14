@@ -35,57 +35,39 @@
         <!-- Service 1 -->
         <div class="service-card">
             <h3>Forestry Project Development</h3>
-            <p>Preparation and structuring of forestry projects from concept to implementation readiness.</p>
-            <ul>
-                <li>Feasibility studies</li>
-                <li>Site assessment and species selection</li>
-                <li>Environmental and social assessments</li>
-                <li>Project design and planning</li>
-                <li>Structuring support (with partners/SPVs)</li>
-            </ul>
-            <span class="role">BGF Role: Technical developer and advisor</span>
+            <p>Preparation and structuring of forestry projects from concept to implementation readiness.
+                Feasibility studies, Site management and species selection.Also Environmental and social 
+                assessment.Project design and planning while structuring support with partners & SPVs.
+            </p>
+           
         </div>
 
         <!-- Service 2 -->
         <div class="service-card">
             <h3>Forestry Implementation & Operations</h3>
-            <p>End-to-end implementation of forestry and agroforestry projects in the field.</p>
-            <ul>
-                <li>Nursery operations and seedling production</li>
-                <li>Land preparation and planting</li>
-                <li>Field supervision and workforce management</li>
-                <li>Maintenance and protection</li>
-                <li>Operational continuity</li>
-            </ul>
-            <span class="role">BGF Role: Primary implementer and operator</span>
+            <p>End-to-end implementation of forestry and agroforestry projects in the field.
+                Nursery operations and seedling production, Land preparation and planting. Field 
+                supervision and workforce management. Maintenance and protection for operational continuity
+            </p>
         </div>
 
         <!-- Service 3 -->
         <div class="service-card">
             <h3>Monitoring, Reporting & Asset Management</h3>
-            <p>Ongoing monitoring and management of forestry assets over time.</p>
-            <ul>
-                <li>Survival tracking and growth monitoring</li>
-                <li>Inventory systems</li>
-                <li>Operational reporting</li>
-                <li>Data collection and verification</li>
-                <li>Performance tracking</li>
-            </ul>
-            <span class="role">BGF Role: Manager and reporting platform</span>
+            <p>Ongoing monitoring and management of forestry assets over time. Survival tracking and growth
+                monitoring,We also have inventory systems,Operational reporting, Data collection and verification and
+                performance tracking.
+            </p>
         </div>
 
         <!-- Service 4 -->
         <div class="service-card">
             <h3>Community & Agroforestry Integration</h3>
-            <p>Integration of forestry activities with local communities and land systems.</p>
-            <ul>
-                <li>Farmer engagement and agreements</li>
-                <li>Agroforestry systems</li>
-                <li>Training and capacity building</li>
-                <li>Local participation structures</li>
-                <li>Land stewardship support</li>
-            </ul>
-            <span class="role">BGF Role: Programme implementer (with communities)</span>
+            <p>Integration of forestry activities with local communities and land systems. Farmers engagement and
+                agreements and Agroforestry systems. We also have training and capacity building through local participation
+                structures and Land stewardship support.
+            </p>
+        
         </div>
 
     </div>
@@ -128,18 +110,12 @@
     <!-- CTA -->
     <div class="services-cta-container">
     <div class="services-cta">
-        <h2>See Our Work in Practice</h2>
+        
         <a href="/projects" class="btn-primary">View Our Projects</a>
     </div>
 </div>
 
 
-    <!-- FOOTER NOTE -->
-    <div class="services-note">
-        <p>
-            Better Globe Forestry Ltd provides forestry implementation and management services. Ownership of land, trees, carbon credits, or financial returns depends on project-specific contractual arrangements.
-        </p>
-    </div>
 
 </section>
 

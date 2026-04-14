@@ -177,3 +177,7 @@
 
     </section>  
 @endsection
+
+@section('content')
+    <h1 style="color:red;">THIS IS ABOUT PAGE</h1>
+@endsection
