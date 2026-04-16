@@ -5,31 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Laravel App</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; }
-        
-    
-       
-        /* Footer */
-        footer { width: 100%; padding: 40px 50px; background: #34495e; color: white; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
-        footer .footer-section { flex: 1 1 200px; }
-        footer h3 { margin-bottom: 15px; }
-        footer p, footer a { color: #ecf0f1; text-decoration: none; line-height: 1.5; }
-        footer a:hover { text-decoration: underline; }
-        footer .socials a { margin-right: 15px; font-weight: bold; }
-
-        /* Responsive tweaks */
-        @media(max-width:768px) {
-            header { flex-direction: column; align-items: flex-start; padding: 15px 20px; }
-            header .top-info { position: static; margin-top: 5px; }
-            footer { flex-direction: column; }
-        }
-    </style>
+  
 </head>
 <body>
 
     <!-- Header -->
-  <header>
+  <header class="site-header">
     <div class="logo">
         <img src="{{ asset('images/bgflogo.webp') }}" alt="Logo" width="50">
         <span>Better Globe Forestry</span>
@@ -44,6 +25,11 @@
     <nav id="nav-menu">
     <a href="{{ route('home') }}">Home</a>
 
+
+
+
+
+    
     <div class="nav-item dropdown">
         <a href="{{ route('about') }}">About</a>
 
@@ -56,7 +42,52 @@
         </div>
     </div>
 
+
+
+
+
+   <div class="nav-item dropdown">
     <a href="{{ route('services') }}">Services</a>
+
+    <div class="dropdown-menu">
+        <a href="{{ route('services') }}#what-we-provide">What We Provide</a>
+        <a href="{{ route('services') }}#How-Our-Services-Are-Delivered">How We Work</a>
+        <a href="{{ route('services') }}#who-we-work-with">Our Partners</a>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="nav-item dropdown">
+    <a href="#" class="dropdown-toggle">Projects</a>
+
+    <div class="dropdown-menu">
+        <a href="{{ route('projects') }}#core-service-Areas">Core Services</a>
+        <a href="{{ route('projects') }}#How-We-Work">How We Work</a>
+        <a href="{{ route('projects') }}#Proof-of-Delivery">Proof of Delivery</a>
+        <a href="{{ route('projects') }}#Looking-for-structured-programmes?">Request Proposal</a>
+    </div>
+</div>
+<script id="drop1">
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault(); // 🔥 stop navigation
+
+        const parent = this.parentElement;
+        parent.classList.toggle('active');
+    });
+});
+</script>
+
+
+
+
+
+
+
     <a href="#">Contact</a>
 </nav>
 </header>
@@ -80,14 +111,15 @@ Ownership of land, trees, carbon credits, or financial returns depends on projec
         <a href="{{ route('home') }}">Home</a>
         <a href="{{ route('about') }}">About</a>
         <a href="{{ route('services') }}">Services</a>
+        <a href="{{ route('projects') }}">Projects</a>
         <a href="#">Contact</a>
     </div>
 </div>
         <div class="footer-section">
             <h3>Contact</h3>
             <p>Address: Nairobi, Kenya</p>
-            <p>Phone: +254 700 123 456</p>
-            <p>Email: info@myapp.com</p>
+            <p>Phone: +254 110 066 043</p>
+            <p>Email: info@betterglobeforestry.com</p>
             <div class="socials">
                 <a href="#">Facebook</a>
                 <a href="#">Twitter</a>
