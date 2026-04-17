@@ -36,9 +36,9 @@
         <div class="dropdown-menu">
             <a href="{{ route('about') }}#our-role">Our Role</a>
             <a href="{{ route('about') }}#how-we-work">How We Work</a>
-            <a href="{{ route('about') }}#Experience">Our Experience</a>
+            <a href="{{ route('about') }}#Experience">Experience</a>
             <a href="{{ route('about') }}#Vision">Vision & Mission</a>
-            <a href="{{ route('about') }}#Vision">BGF Ecosystem</a>
+            <a href="{{ route('about') }}#Ecosystem">BGF Ecosystem</a>
         </div>
     </div>
 
@@ -62,7 +62,7 @@
 
 
 <div class="nav-item dropdown">
-    <a href="#" class="dropdown-toggle">Projects</a>
+    <a href="{{ route('projects') }}" class="dropdown-toggle">Projects</a>
 
     <div class="dropdown-menu">
         <a href="{{ route('projects') }}#core-service-Areas">Core Services</a>
@@ -71,24 +71,33 @@
         <a href="{{ route('projects') }}#Looking-for-structured-programmes?">Request Proposal</a>
     </div>
 </div>
-<script id="drop1">
-document.querySelectorAll('.dropdown-toggle').forEach(item => {
-    item.addEventListener('click', function(e) {
-        e.preventDefault(); // 🔥 stop navigation
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-        const parent = this.parentElement;
-        parent.classList.toggle('active');
+    document.querySelectorAll('.nav-item.dropdown > a.dropdown-toggle')
+    .forEach(function (toggle) {
+
+        toggle.addEventListener('click', function (e) {
+
+            const parent = this.parentElement;
+
+            // if dropdown has menu, toggle instead of always blocking
+            const hasMenu = parent.querySelector('.dropdown-menu');
+
+            if (hasMenu) {
+                e.preventDefault();
+                parent.classList.toggle('active');
+            }
+
+        });
+
     });
+
 });
 </script>
 
 
-
-
-
-
-
-    <a href="#">Contact</a>
+   <a href="{{ route('contact') }}">Contact</a>
 </nav>
 </header>
 
@@ -112,7 +121,7 @@ Ownership of land, trees, carbon credits, or financial returns depends on projec
         <a href="{{ route('about') }}">About</a>
         <a href="{{ route('services') }}">Services</a>
         <a href="{{ route('projects') }}">Projects</a>
-        <a href="#">Contact</a>
+        <a href="{{ route('contact') }}">Contact</a>
     </div>
 </div>
         <div class="footer-section">

@@ -169,15 +169,59 @@
 
 
 </section>
-<div class="company-diagram-container">
-    <img src="{{ asset('images/bgf-f.png') }}" 
-         alt="Company Structure Diagram" 
-         class="company-diagram">
-</div>
+
+
+
+
+<section class="bgf-diagram">
+    <h2>BGF & BGFF STRUCTURE</h2>
+
+    <div class="diagram">
+
+        <!-- Top layer -->
+        <div class="row">
+            <div class="box">Ownership & Financing Layer<br><small>(Investors & Partners)</small></div>
+            <div class="box">BGFF - Public Interest Layer<br><small>(Foundation / Donor Programmes)</small></div>
+        </div>
+
+        <!-- Middle -->
+        <div class="row center">
+            <div class="box highlight">Special Purpose Vehicles (SPVs)</div>
+        </div>
+
+        <!-- Bottom split -->
+        <div class="row split">
+
+            <!-- Left branch -->
+            <div class="branch">
+                <div class="box">Operational Layer - BGF<br><small>(Implementation Platform)</small></div>
+
+                <div class="row">
+                    <div class="box small">Programme Implementation</div>
+                    <div class="box small">Reporting & Monitoring<br><small>(Inventory System)</small></div>
+                </div>
+            </div>
+
+            <!-- Right branch -->
+            <div class="branch">
+                <div class="box">Participation Layer<br><small>(Farmers & Land Stewardship)</small></div>
+
+                <div class="row">
+                    <div class="box small">Land Stewardship</div>
+                    <div class="box small">Agroforestry Integration</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer info -->
+    <div class="diagram-footer">
+        <b><p>info@betterglobeforestry.com</p></b>
+        <b><p>www.betterglobeforestry.com</p></b>
+    </div>
+</section>
 
     </section>  
-@endsection
-
-@section('content')
-    <h1 style="color:red;">THIS IS ABOUT PAGE</h1>
 @endsection
