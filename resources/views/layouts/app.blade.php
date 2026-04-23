@@ -65,37 +65,10 @@
     <a href="{{ route('projects') }}" class="dropdown-toggle">Projects</a>
 
     <div class="dropdown-menu">
-        <a href="{{ route('projects') }}#core-service-Areas">Core Services</a>
-        <a href="{{ route('projects') }}#How-We-Work">How We Work</a>
         <a href="{{ route('projects') }}#Proof-of-Delivery">Proof of Delivery</a>
-        <a href="{{ route('projects') }}#Looking-for-structured-programmes?">Request Proposal</a>
+        <a href="{{ route('plantations') }}">Plantations</a>
     </div>
 </div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    document.querySelectorAll('.nav-item.dropdown > a.dropdown-toggle')
-    .forEach(function (toggle) {
-
-        toggle.addEventListener('click', function (e) {
-
-            const parent = this.parentElement;
-
-            // if dropdown has menu, toggle instead of always blocking
-            const hasMenu = parent.querySelector('.dropdown-menu');
-
-            if (hasMenu) {
-                e.preventDefault();
-                parent.classList.toggle('active');
-            }
-
-        });
-
-    });
-
-});
-</script>
-
 
    <a href="{{ route('contact') }}">Contact</a>
 </nav>
