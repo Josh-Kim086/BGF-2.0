@@ -7,7 +7,7 @@
     <div class="hero-content">
         <h1>Our Projects</h1>
         <p>
-            Better Globe Forestry operates as an implementation and management platform
+            Better Globe Forestry LTD operates as an implementation and management platform
 for forestry and agroforestry projects across East Africa.
         </p>
 
@@ -49,40 +49,7 @@ funding structures defined at project level
 
 </section>
 
-<!-- SERVICE PILLARS -->
-<section class="service-pillars">
-    <h2>Core Service Areas</h2>
 
-    <div class="pillars-grid">
-
-        <div class="pillar">
-            <h3>Commercial Forestry Development</h3>
-            <p>Development and management of commercial and restoration forestry projects including site selection, planning, species modelling, and long-term growth optimisation.</p>
-        </div>
-
-        <div class="pillar">
-            <h3>Carbon & Environmental Programme Support</h3>
-            <p>Support to afforestation and reforestation programmes aligned with carbon standards, including MRV systems and partner coordination.</p>
-            <small>BGF supports carbon-aligned projects but does not act as a carbon credit seller.</small>
-        </div>
-
-        <div class="pillar">
-            <h3>Agroforestry & Farmer Engagement</h3>
-            <p>Integration of forestry into farmer systems through structured outgrower schemes, training, and long-term livelihood support.</p>
-        </div>
-
-        <div class="pillar">
-            <h3>Forestry Operations & Management</h3>
-            <p>Full operational execution including nursery management, planting, maintenance, protection, and logistics.</p>
-        </div>
-
-        <div class="pillar">
-            <h3>Training & Capacity Building</h3>
-            <p>Technical training, advisory services, and institutional support for forestry programmes and partners.</p>
-        </div>
-
-    </div>
-</section>
 
 <!-- HOW WE WORK -->
 <section class="how-we-work">
@@ -151,8 +118,9 @@ funding structures defined at project level
         dryland environment, focused on structured plantation management, species
         performance, and long-term timber development.
     </p>
-    <a href="{{ route('plantations') }}#kiambere">Read more</a>
-      
+    <a href="{{ route('plantations') }}#kiambere" class="btn">
+    View Project
+</a>
 </div>
 
 <!-- CASE -->
@@ -165,7 +133,7 @@ funding structures defined at project level
         silvicultural quality, structured plantation management, and long-term
         resource development.
     </p>
-    <a href="{{ route('plantations') }}#Nyongoro">View Project</a>
+<a href="{{ route('plantations') }}#Nyongoro" class="btn">View Project</a>
       
 </div>
 
@@ -180,7 +148,7 @@ funding structures defined at project level
         ongoing monitoring systems.
     </p>
 
-   <a href="{{ route('plantations') }}#7 Forks">View Project</a>
+   <a href="{{ route('plantations') }}#7 Forks" class="btn">View Project</a>
       
 </div>
 
@@ -195,7 +163,7 @@ funding structures defined at project level
         and structured implementation.
     </p>
 
-    <a href="{{ route('plantations') }}#Dokolo">View Project</a>
+    <a href="{{ route('plantations') }}#Dokolo" class="btn">View Project</a>
       
 </div>
 

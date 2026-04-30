@@ -14,11 +14,11 @@
 
 
 <!-- ================= KIAMBERE ================= -->
-<section id="kiambere">
-<section class="plantation-section">
+<!-- KIAMBERE -->
+<section id="kiambere" class="plantation-section">
 
     <h2>Kiambere Plantation</h2>
-    <p class="subtitle" style="fomt-weight:600;">Commercial dryland plantation under structured forestry management</p>
+    <p class="subtitle" style="font-weight:600;">Commercial dryland plantation under structured forestry management</p>
 
     <div class="block">
         <h3>Overview</h3>
@@ -53,7 +53,7 @@
 </div>
 
     <div class="block">
-        <h3>Structure / Partnerships</h3>
+        <h3>Structure/Partnerships</h3>
         <p>
             The plantation operates within a structured framework where ownership and
             funding may be defined at project level, while Better Globe Forestry ensures
@@ -74,11 +74,11 @@
 <div class="image-container">
     <img src="/images/kiambere-after.webp" alt="Kiambere Plantation">
 </div>
-</section>
 
 
 <!-- ================= KIAMBERE AGROFORESTRY ================= -->
-<section class="plantation-section">
+<!-- KIAMBERE AGROFORESTRY -->
+<section id="kiambere-agroforestry" class="plantation-section">
 
     <h2>Kiambere Agroforestry Project</h2>
     <p class="subtitle">Farmer-based agroforestry initiative integrating trees into farming systems</p>
@@ -106,8 +106,8 @@
 </div>
 
 <!-- ================= NYONGORO ================= -->
-<section id="Nyongoro">
-<section class="plantation-section">
+<!-- NYONGORO -->
+<section id="nyongoro" class="plantation-section">
 
     <h2>Nyongoro Plantation</h2>
     <p class="subtitle">Dryland plantation focused on silvicultural quality and long-term management</p>
@@ -146,7 +146,7 @@
 </div>
 
     <div class="block">
-        <h3>Structure/Partnerships<h3>
+        <h3>Structure/Partnerships</h3>
         <p>The plantation operates within a structured framework where ownership and
            financing are defined separately, while Better Globe Forestry ensures
            consistent implementation.
@@ -161,7 +161,6 @@
         </div>  
 
 </section>
-</section>
 
 <div class="image-container">
     <img src="/images/DSC_0095.jpg" alt="Nyongoro Plantation">
@@ -170,8 +169,8 @@
 
 
 <!-- ================= 7 FORKS ================= -->
-<section id="7 Forks">
-<section class="plantation-section">
+<!-- 7 FORKS -->
+<section id="seven-forks" class="plantation-section">
 
     <h2>7 Forks Agroforestry Programme</h2>
     <p class="subtitle">Large-scale farmer-based agroforestry programme</p>
@@ -232,11 +231,11 @@
     <img src="/images/img10.jpg" alt="7 Folks Plantation">
 </div> 
 
-</section>
+
 
 <!-- ================= DOKOLO ================= -->
-<section id="Dokolo">
-<section class="plantation-section">
+<!-- DOKOLO -->
+<section id="dokolo" class="plantation-section">
 
     <h2>Dokolo Project (Uganda)</h2>
     <p class="subtitle">Forestry and agroforestry adaptation in Uganda</p>
@@ -278,7 +277,7 @@
         <h3>Structure/Partnerships</h3>
         <p>The project is implemented within a structured framework involving local
            stakeholders and project-level arrangements, aligned with the broader
-           institutional model<p>
+           institutional model</p>
            </div>
 
            <div class="block">
@@ -294,7 +293,7 @@
 </div> 
 
 </section>
-</section>
+
 
 
 <!-- CTA -->
@@ -307,5 +306,6 @@
 
     <a href="{{ route('services') }}" class="cta-btn">→ Explore Services</a>
 </section>
+
 
 @endsection

@@ -26,3 +26,11 @@ Route::get('/contact', function () {
 Route::get('/plantations', function () {
     return view('plantations');
 })->name('plantations');
+
+Route::get('/partners', function () {
+    return view('partners');
+})->name('partners');
+
+Route::get('/faq', function () {
+    return view('faq');
+})->name('faq');

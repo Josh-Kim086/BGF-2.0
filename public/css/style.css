@@ -49,16 +49,13 @@ h1, h2, p, a {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: bold;
+    flex-shrink: 0;
+    font-weight: 700;
 }
 
 /* Navigation */
 /* NAVIGATION CONTAINER */
-header nav {
-    display: flex;
-    align-items: center;
-    gap: 45px; /* 🔥 controls spacing between items */
-}
+
 
 /* NAV LINKS */
 header nav a {
@@ -81,13 +78,8 @@ header nav a:hover {
 
 
 
-/* Menu toggle */
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin-left: auto;
-}
+
+
 
 /* ===== BUTTONS (match header) ===== */
 .btn {
@@ -106,47 +98,38 @@ header nav a:hover {
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
 
-    .site-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 15px;
-        height: 70px;
-    }
-
-    /* KEEP logo on left */
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    /* PUSH hamburger to far right */
+    /* show hamburger */
     .menu-toggle {
         display: block;
-        margin-left: auto;
-        font-size: 24px;
-        cursor: pointer;
-        color: white;
     }
 
-    /* HIDE nav initially */
+    /* hide nav by default */
     .site-header nav {
         display: none;
         flex-direction: column;
 
         position: absolute;
-        top: 100%;
-        left: 0;
+        top: 80px;
+        right: 10px;
 
-        width: 100%;
+        width: 220px;
         background: #02490b;
-        padding: 10px 0;
+
+        padding: 15px;
+        border-radius: 10px;
+
+        z-index: 9999;
     }
 
-    /* SHOW when active */
+    /* show menu when active */
     .site-header nav.active {
         display: flex;
+    }
+
+    /* mobile links */
+    .site-header nav a {
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.2);
     }
 }
 
@@ -154,7 +137,7 @@ header nav a:hover {
 footer { 
     width: 100%; 
     padding: 40px 50px; 
-    background: #2d7a3e !important;
+    background:  #1f712f !important;
     color: white; 
     display: flex; 
     justify-content: space-between; 
@@ -209,6 +192,57 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
     transform: translateX(4px);
+}
+
+.footer-links-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+}.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px;
+}
+
+/* Each column */
+.footer-section {
+    flex: 1;
+}
+
+/* Quick links split into 2 columns */
+.footer-links-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Push Contact fully right */
+.footer-section:last-child {
+    text-align: left;
+    margin-left: auto;
+}
+
+/* Optional: cleaner links */
+.footer-links a,
+.socials a {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -326,6 +360,109 @@ footer {
 
 
 
+/**Home page list**/
+/* INTERACTIVE LIST UPGRADE */
+.how-we-work-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.how-we-work-list li {
+    position: relative;
+    background: #f3f4f3;
+    padding: 18px 20px 18px 25px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    color: #2f4f2f;
+    font-weight: 600;
+
+    /* smooth feel */
+    transition: all 0.3s ease;
+
+    /* subtle depth */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+    /* keep your animation */
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.6s forwards;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+/* LEFT ACCENT BAR */
+.how-we-work-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: 10px;
+    width: 5px;
+    background: var(--primary-green);
+    border-radius: 5px;
+}
+
+/* HOVER EFFECT (like your image) */
+.how-we-work-list li:hover {
+    background: #b7e4c7;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+
+
+
+.cta-like-block {
+    background: #76e476;
+    padding: 20px 25px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 20px auto;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.cta-like-block .text-block {
+    margin: 0;
+    font-weight: 600;
+    color: #01300f;
+}
+
+.flow-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px auto;
+}
+
+.flow-item {
+    background: #f6fbf6;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #01300f;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+/* subtle hover like your other cards */
+.flow-item:hover {
+    background: #b7e4c7;
+    transform: translateY(-2px);
+}
+
+.flow-arrow {
+    font-weight: bold;
+    color: #01300f;
+}
+
+
+
+
+
 /* Cards container */
 .cards {
     display: flex;
@@ -337,7 +474,7 @@ footer {
 
 /* Individual card */
 .card {
-    background: #f9f9f9; /* subtle light grey so it stands out on white page */
+    background: #f6f8f6; /* subtle light grey so it stands out on white page */
     padding: 20px;
     width: 280px; /* slightly wider for readability */
     border-radius: 10px;
@@ -383,43 +520,18 @@ footer {
 /* Menu toggle (hidden by default) */
 .menu-toggle {
     display: none;
-    font-size: 1.8rem;
+    font-size: 26px;
     cursor: pointer;
+    color: white;
+    margin-left: auto;
 }
 
-/* Navigation */
-header nav {
-    display: flex;
-}
-
-/* Mobile styles */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* show hamburger */
-    }
-
-    header nav {
-        display: none; /* hide menu */
-        flex-direction: column;
-        width: 100%;
-        background: #02490b;
-        margin-top: 10px;
-    }
-
-    header nav a {
-        padding: 10px;
-        border-top: 1px solid rgba(255,255,255,0.2);
-    }
-
-    header nav.active {
-        display: flex; /* show when clicked */
+        display: block;
     }
 }
-.menu-toggle {
-    margin-left: auto; /* pushes it to the far right */
-    font-size: 1.8rem;
-    cursor: pointer;
-}
+
 h2 {
     text-align: center;        /* Center the text */
     margin-top: 50px;          /* Space above each heading */
@@ -1623,6 +1735,12 @@ nav a:hover {
 
     overflow: hidden;
 }
+.projects-hero p {
+    font-size: 18px;   /* increase size */
+    font-weight: 600;  /* make it bold */
+    margin-top: 10px;  /* optional spacing from h1 */
+}
+
 /* DARK OVERLAY */
 .projects-hero::before {
     content: "";
@@ -2117,11 +2235,6 @@ nav a:hover {
 ========================= */
 @media (max-width: 768px) {
 
-    .site-header {
-        flex-direction: column;
-        gap: 8px
-    ;
-    }
 
     nav {
         flex-direction: column;
@@ -2621,5 +2734,209 @@ nav a:hover {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+
+
+/**Partners**/
+
+/* =========================
+   PARTNERS PAGE
+========================= */
+
+/* HERO */
+.partners-hero {
+    height: 350px;
+    background: url('/images/img7.JPG') center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.partners-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.partners-hero-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+.partners-hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.partners-hero p {
+    font-size: 18px;
+}
+
+/* GRID */
+.partners-section {
+    padding: 60px 20px;
+    background: #f7f9f7;
+}
+
+.partners-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.partner-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+    transition: all 0.3s ease;
+}
+
+.partner-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.partner-card h3 {
+    color: #02490b;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.partner-card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* HOVER */
+.partner-card:hover {
+    transform: translateY(-6px);
+    background: #a2eaa8;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .partners-hero h1 {
+        font-size: 26px;
+    }
+
+    .partners-hero p {
+        font-size: 14px;
+    }
+}
+
+
+/***FAQs***/
+
+/* FAQ LAYOUT */
+.faq-section {
+    padding: 60px 20px;
+}
+
+.faq-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.faq-left {
+    flex: 1;
+}
+
+/* RIGHT IMAGE */
+.faq-right {
+    flex: 1;
+    position: sticky;
+    top: 100px;
+}
+
+.faq-right img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* FAQ ITEMS */
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+/* QUESTION */
+.faq-question {
+    background: #f3f4f3;
+    padding: 18px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+.faq-question:hover {
+    background: #b7e4c7;
+}
+
+/* ICON */
+.faq-icon {
+    position: absolute;
+    right: 20px;
+}
+
+/* ANSWER */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #fff;
+}
+
+.faq-answer p {
+    padding: 15px 18px;
+}
+
+/* ACTIVE STATE */
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-item.active .faq-icon {
+    content: "-";
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column;
+    }
+
+    .faq-right {
+        position: static;
     }
 }
