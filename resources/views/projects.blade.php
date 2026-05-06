@@ -92,20 +92,20 @@ funding structures defined at project level
     <div class="metrics">
         <div class="metric-card">
             <span>🌱</span>
-            <h3>10M+</h3>
-            <p>Trees Planted</p>
+            <h3>3.5M+</h3>
+            <p>Trees Standing</p>
         </div>
 
         <div class="metric-card">
             <span>🌍</span>
-            <h3>5,000+</h3>
+            <h3>20,000+</h3>
             <p>Hectares Restored</p>
         </div>
 
         <div class="metric-card">
             <span>👨‍🌾</span>
-            <h3>3,000+</h3>
-            <p>Farmers Engaged</p>
+            <h3>30,000+</h3>
+            <p>Households Impacted</p>
         </div>
     </div>
 

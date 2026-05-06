@@ -11,7 +11,7 @@
 
         <!-- Image -->
         <div style="flex: 1; min-width: 300px;">
-            <img src="{{ asset('images/img3.webp') }}" 
+            <img src="{{ asset('images/DJI_0177.JPG') }}" 
                  alt="About Us Image" 
                  style="width: 100%; height: auto; border-radius: 10px;">
         </div>
@@ -53,7 +53,7 @@
         </p>
 
         <div class="experience-image-container">
-            <img src="{{ asset('images/img4.webp') }}" 
+            <img src="{{ asset('images/20221130_111451.jpg') }}" 
                  alt="Our Experience Image" 
                  class="experience-image">
         </div>
@@ -108,6 +108,7 @@
             </ul>
         </div>
     </div>
+
 
     <div id="Vision">
         <h2>Our Vision</h2>

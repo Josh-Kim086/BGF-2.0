@@ -1268,7 +1268,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     text-align: center;
 
     /* ADD THIS */
-    background-image: url('/images/img9.jpg');
+    background-image: url('/images/DSC_0245.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1730,8 +1730,7 @@ nav a:hover {
 
     text-align: center;
     color: white;
-
-    background: #000 url('/images/101124 Kiambere 048.JPG') center/cover no-repeat;
+    background: url('/images/Dokolo nursery melia seedlings.jpg') center/cover no-repeat;
 
     overflow: hidden;
 }
@@ -2939,4 +2938,74 @@ nav a:hover {
     .faq-right {
         position: static;
     }
+}
+/* Container */
+.info-box-container {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Individual box */
+.info-box {
+    background: #f2f2f2;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: 600;
+}
+
+/* Green left bar */
+.info-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: 10px;
+    width: 5px;
+    background: #02490b; /* your primary green */
+    border-radius: 5px;
+}
+
+/* Text alignment */
+.partners-intro,
+.partners-subtitle {
+    text-align: center;
+}
+/* Hover effect */
+.info-box:hover {
+    background: #e6f4ea; /* light green */
+    transform: translateY(-3px);
+}
+
+/* Optional: make the bar slightly brighter on hover */
+.info-box:hover::before {
+    background: #045b11;
+}
+
+/* Text alignment */
+.partners-intro,
+.partners-subtitle {
+    text-align: center;
+}
+
+/* Background container */
+.flow-section {
+    background-image: url('/images/101124 Kiambere 048.JPG'); /* replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    color: rgb(253, 255, 253);
+}
+
+/* Optional overlay for readability */
+.flow-overlay {
+    background: rgba(1, 53, 9, 0.894); /* dark overlay */
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
 }

@@ -7,11 +7,13 @@
     <!-- HERO -->
     <div class="services-hero">
         <div class="container">
-        <h1>Our Services</h1>
-        <h3>Professional Forestry Implementation and Management Services</h3>
-        
+            <h1>Forestry Implementation Platform</h1>
+            <h3>
+                Enabling structured, large-scale forestry and agroforestry programmes 
+                through professional execution, systems, and long-term operational management.
+            </h3>
 
-        <a href="/projects" class="btn-primary">Explore Our Projects</a>
+            <a href="/projects" class="btn-primary">Explore Our Projects</a>
         </div>
     </div>
 
@@ -20,141 +22,128 @@
     <div class="services-intro">
         <h2>What We Provide</h2>
         <p>
-            Better Globe Forestry Ltd provides professional forestry and agroforestry services
-             across the full lifecycle of project development and implementation.
-            We act as an implementation and management platform, supporting partners, investors, 
-            and landholders through structured project arrangements, ensuring technical quality,
-             operational continuity, and transparent reporting.
-        </p>
-    </div>
-
-
-    <!-- SERVICES GRID -->
-    <div class="services-grid">
-
-        <!-- Service 1 -->
-        <div class="service-card">
-            <h3>Forestry Project Development</h3>
-            <p>Preparation and structuring of forestry projects from concept to implementation readiness.
-                Feasibility studies, Site management and species selection.Also Environmental and social 
-                assessment.Project design and planning while structuring support with partners & SPVs.
-            </p>
-           
-        </div>
-
-        <!-- Service 2 -->
-        <div class="service-card">
-            <h3>Forestry Implementation & Operations</h3>
-            <p>End-to-end implementation of forestry and agroforestry projects in the field.
-                Nursery operations and seedling production, Land preparation and planting. Field 
-                supervision and workforce management. Maintenance and protection for operational continuity
-            </p>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="service-card">
-            <h3>Monitoring, Reporting & Asset Management</h3>
-            <p>Ongoing monitoring and management of forestry assets over time. Survival tracking and growth
-                monitoring,We also have inventory systems,Operational reporting, Data collection and verification and
-                performance tracking.
-            </p>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="service-card">
-            <h3>Community & Agroforestry Integration</h3>
-            <p>Integration of forestry activities with local communities and land systems. Farmers engagement and
-                agreements and Agroforestry systems. We also have training and capacity building through local participation
-                structures and Land stewardship support.
-            </p>
-        
-        </div>
+            Better Globe Forestry acts as an independent implementation platform within structured forestry programmes.
+            We design, implement, and manage forestry and agroforestry projects on behalf of partners, investors, and institutions,
+            ensuring technical quality, operational continuity, and transparent reporting.</p> <h2></h2> 
+        <p>Better globe forestry does not own project assests by default.It acts as an independent impplementation platform</p>
 
     </div>
 
 
-    <!-- HOW SERVICES ARE DELIVERED -->
+
+
+    <!-- HOW WE WORK (NEW STRUCTURED VERSION) -->
     <div class="services-delivery">
-        <h2>How Our Services Are Delivered</h2>
+        <h2>How We Work</h2>
         <p>
-            BGF delivers its services within structured project frameworks that may involve investors, landholders,
-             carbon partners, and public-interest entities.Assets may be held by dedicated project structures (e.g SPVs).
-             BGF operates as the implementing and management partner.Its roles and responsibilities are defined contractually.
-             This approach ensures clarity of ownership and responsibilities, strong governance and transparency and a 
-             long-term operational reliability.
-            </p>
-    </div>
+            Better Globe Forestry operates as an implementation platform within structured programme frameworks.
+            Partners and investors engage through programme structures (including SPVs), while BGF delivers execution 
+            on the ground.
+            <br>This ensures:</br>
+        </p>
 
+      
 
-    <div class="services-partners">
+        <div class="info-box-container">
 
-    <div class="partners-image">
-        <img src="{{ asset('images/img6.JPG') }}" alt="Our Partners">
-    </div>
+    <div class="info-box">Clear role separation</div>
+    <div class="info-box">Structured governance</div>
+    <div class="info-box">Reliable, auditable implementation</div>
 
-
-
-
-    <!-- SERVICE PILLARS -->
-<section class="service-pillars">
-    <h2>Core Service Areas</h2>
-
-    <div class="pillars-grid">
-
-        <div class="pillar">
-            <h3>Commercial Forestry Development</h3>
-            <p>Development and management of commercial and restoration forestry projects including site selection, planning, species modelling, and long-term growth optimisation.</p>
-        </div>
-
-        <div class="pillar">
-            <h3>Carbon & Environmental Programme Support</h3>
-            <p>Support to afforestation and reforestation programmes aligned with carbon standards, including MRV systems and partner coordination.</p>
-            <small>BGF supports carbon-aligned projects but does not act as a carbon credit seller.</small>
-        </div>
-
-        <div class="pillar">
-            <h3>Agroforestry & Farmer Engagement</h3>
-            <p>Integration of forestry into farmer systems through structured outgrower schemes, training, and long-term livelihood support.</p>
-        </div>
-
-        <div class="pillar">
-            <h3>Forestry Operations & Management</h3>
-            <p>Full operational execution including nursery management, planting, maintenance, protection, and logistics.</p>
-        </div>
-
-        <div class="pillar">
-            <h3>Training & Capacity Building</h3>
-            <p>Technical training, advisory services, and institutional support for forestry programmes and partners.</p>
-        </div>
-
-    </div>
-</section>
-
-
-
-    <!-- WHO WE WORK WITH -->
-    <div class="services-partners">
-        <h2>Who We Work With</h2>
-
-        <div class="partners-container">
-        <div class="partner-card">Investors and project developers</div>
-        <div class="partner-card">Carbon project partners</div>
-        <div class="partner-card">Landowners and concession holders</div>
-        <div class="partner-card">Development organisations and foundations</div>
-        <div class="partner-card">Local communities and farmer groups</div>
-    </div>
-    </div>
-
-
-    <!-- CTA -->
-    <div class="services-cta-container">
-    <div class="services-cta">
-        
-        <a href="/projects" class="btn-primary">View Our Projects</a>
-    </div>
 </div>
+    </div>
 
 
+    <div class="services-partners">
+
+        <div class="partners-image">
+            <img src="{{ asset('images/101124 Kiambere 035.JPG') }}" alt="Our Partners">
+        </div>
+
+
+        <!-- SERVICE PILLARS -->
+        <section class="service-pillars">
+            <h2>Core Service Areas</h2>
+
+            <!-- NEW FRAMING LINE -->
+            <p style="text-align:center; max-width:800px; margin:auto;">
+                Our services are not standalone offerings. They are integrated components of structured forestry programmes,
+                where Better Globe Forestry acts as the implementation platform.
+            </p>
+
+            <div class="pillars-grid">
+
+                <div class="pillar">
+                    <h3>Commercial Forestry Development</h3>
+                    <p>
+                        Design and development of forestry programmes, including site selection, species strategy,
+                        planning, and long-term growth optimisation.
+                    </p>
+                </div>
+
+                <div class="pillar">
+                    <h3>Carbon & Environmental Programme Support</h3>
+                    <p>
+                        Implementation support for afforestation and reforestation programmes aligned with carbon
+                        and environmental standards, including MRV systems and partner coordination.
+                    </p>
+                    <small>BGF supports carbon-aligned programmes but does not act as a carbon credit seller.</small>
+                </div>
+
+                <div class="pillar">
+                    <h3>Agroforestry & Farmer Engagement</h3>
+                    <p>
+                        Integration of forestry into smallholder systems through structured outgrower models,
+                        training, and long-term engagement programmes.
+                    </p>
+                </div>
+
+                <div class="pillar">
+                    <h3>Forestry Operations & Management</h3>
+                    <p>
+                        Full operational execution including nursery management, planting, maintenance,
+                        protection, and logistics.
+                    </p>
+                </div>
+
+                <div class="pillar">
+                    <h3>Training & Capacity Building</h3>
+                    <p>
+                        Technical training, advisory services, and institutional support for forestry programmes.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- WHO WE WORK WITH -->
+        <div class="services-partners">
+            <h2>Who We Work With</h2>
+
+            <p style="text-align:center; max-width:800px; margin:auto;">
+                We work with a range of partners involved in the development and implementation of forestry and agroforestry programmes.
+                Each partner category engages within a structured programme framework, ensuring clarity of roles and responsibilities.
+            </p>
+
+            <div class="partners-container">
+                <div class="partner-card">Investors & Programme Developers</div>
+                <div class="partner-card">Carbon & Environmental Programme Partners</div>
+                <div class="partner-card">Landowners and concession holders</div>
+                <div class="partner-card">Development organisations and foundations</div>
+                <div class="partner-card">Local communities and farmer groups</div>
+            </div>
+        </div>
+
+
+        <!-- CTA -->
+        <div class="services-cta-container">
+            <div class="services-cta">
+                <a href="/projects" class="btn-primary">View Our Projects</a>
+            </div>
+        </div>
+
+    </div>
 
 </section>
 

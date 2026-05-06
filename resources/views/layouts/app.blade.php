@@ -56,8 +56,8 @@
 
     <div class="dropdown-menu">
         <a href="{{ route('services') }}#what-we-provide">What We Provide</a>
-        <a href="{{ route('services') }}#How-Our-Services-Are-Delivered">How We Work</a>
-        <a href="{{ route('services') }}#who-we-work-with">Our Partners</a>
+        <a href="{{ route('services') }}#core-service-areas">Core Services</a>
+        <a href="{{ route('services') }}#who-we-work-with">Who we Work With</a>
     </div>
 </div>
 
@@ -96,7 +96,7 @@
             <h3>About Us</h3>
             <p>
                 Better Globe Forestry Ltd provides forestry implementation and management services.
-                Ownership of land, trees, carbon credits, or financial returns depends on project-specific contractual arrangements.
+    
             </p>
         </div>
 

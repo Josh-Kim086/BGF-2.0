@@ -60,6 +60,13 @@
         <li style="--i:4;">Monitoring, reporting, and long-term management</li>
     </ul>
 
+<section class="image-section">
+    <div class="container">
+        <img src="{{ asset('images/IMG_0890.JPG') }}" alt="Forestry operations" class="responsive-image">
+    </div>
+</section>
+
+
     <p class="text-block">
         We operate on behalf of partners and programme structures, ensuring consistent and professional implementation on the ground.
     </p>
@@ -91,7 +98,7 @@
 <!-- IMAGE (UNCHANGED) -->
 <section class="image-section">
     <div class="container">
-        <img src="{{ asset('images/img-1.webp') }}" alt="Forestry operations" class="responsive-image">
+        <img src="{{ asset('images/101124 Kiambere 048.JPG') }}" alt="Forestry operations" class="responsive-image">
     </div>
 </section>
 
@@ -117,7 +124,7 @@
         livelihoods, and community development.
     </p>
 
-    <img src="{{ asset('images/Kamuwongo FSA.jpg') }}" 
+    <img src="{{ asset('images/Ngoce, Mukau Growers SHG.jpg') }}" 
      alt="FAQ Image 2" 
      style="width: 100%; max-width: 1000px; height: auto; display: block; margin: 0 auto;">
 </section>
