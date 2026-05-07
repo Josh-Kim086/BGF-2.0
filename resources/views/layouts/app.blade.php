@@ -51,7 +51,7 @@
 
 
 
-   <div class="nav-item dropdown">
+  <div class="nav-item dropdown">
     <a href="{{ route('services') }}">Services</a>
 
     <div class="dropdown-menu">
@@ -95,9 +95,9 @@
         <div class="footer-section">
             <h3>About Us</h3>
             <p>
-                Better Globe Forestry Ltd provides forestry implementation and management services.
-    
-            </p>
+    Better Globe Forestry Ltd provides forestry implementation and management services across sustainable forestry
+     and agroforestry projects.
+</p>
         </div>
 
         <div class="footer-section">
@@ -128,19 +128,57 @@
      <div class="social-links">
     <a href="https://www.facebook.com/YOUR_FACEBOOK_PAGE" target="_blank">Facebook</a> |
     <a href="https://x.com/BetterglobeF" target="_blank">Twitter (X)</a> |
-    <a href="https://www.linkedin.com/company/YOUR_LINKEDIN_PAGE" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/company/better-globe-forestry/" target="_blank">LinkedIn</a>
 </div>
         </div>
 
     </div>
 </footer>
 
-
-    <script>
+<script>
 function toggleMenu() {
     document.getElementById("nav-menu").classList.toggle("active");
+    document.getElementById("menu-overlay").classList.toggle("active");
 }
+
+/* Mobile dropdown behavior */
+document.querySelectorAll(".dropdown > a").forEach(item => {
+
+    let clickedOnce = false;
+
+    item.addEventListener("click", function(e) {
+
+        if (window.innerWidth <= 768) {
+
+            const parent = this.parentElement;
+
+            /* First click = open dropdown */
+            if (!parent.classList.contains("active")) {
+
+                e.preventDefault();
+
+                /* close other dropdowns */
+                document.querySelectorAll(".dropdown").forEach(drop => {
+                    if (drop !== parent) {
+                        drop.classList.remove("active");
+                    }
+                });
+
+                parent.classList.add("active");
+
+                clickedOnce = true;
+
+            } else {
+
+                /* Second click = allow navigation */
+                window.location.href = this.href;
+            }
+        }
+    });
+});
 </script>
+
+
 
 
 
@@ -156,3 +194,14 @@ function toggleFAQ(element) {
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
