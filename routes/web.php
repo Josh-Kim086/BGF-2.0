@@ -34,3 +34,9 @@ Route::get('/partners', function () {
 Route::get('/faq', function () {
     return view('faq');
 })->name('faq');
+
+
+
+use App\Http\Controllers\ContactMessageController;
+
+Route::post('/contact', [ContactMessageController::class, 'store'])->name('contact.store');

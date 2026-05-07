@@ -72,7 +72,7 @@
 </section>
 
 <div class="image-container">
-    <img src="/images/kiambere-after.webp" alt="Kiambere Plantation">
+    <img src="/images/Kiambere Plantation 01.jpg" alt="Kiambere Plantation">
 </div>
 
 
@@ -102,7 +102,7 @@
 </section>
 
 <div class="image-container">
-    <img src="/images/Agro Forestry 3.jpg" alt="Kiambere Agroforestry Project">
+    <img src="/images/Kiambere Plantation 02.jpg" alt="Kiambere Agroforestry Project">
 </div>
 
 <!-- ================= NYONGORO ================= -->
@@ -144,6 +144,10 @@
         <li>Monitoring and performance tracking</li>
     </ul>
 </div>
+<div class="image-container">
+    <img src="/images/Nyongoro 02.jpg" alt="Nyongoro Plantation">
+</div>
+
 
     <div class="block">
         <h3>Structure/Partnerships</h3>
@@ -163,7 +167,7 @@
 </section>
 
 <div class="image-container">
-    <img src="/images/DSC_0095.jpg" alt="Nyongoro Plantation">
+    <img src="/images/Nyongoro 01.jpg" alt="Nyongoro Plantation">
 </div>
 
 
@@ -195,6 +199,9 @@
            with socio-economic benefits for participating communities</p>
         </div>
 
+  <div class="image-container">
+    <img src="/images/7 Forks 01.jpg" alt="7 Folks Plantation">
+</div> 
 
 
         <div class="key-block">
@@ -228,7 +235,7 @@
 </section>
 
         <div class="image-container">
-    <img src="/images/img10.jpg" alt="7 Folks Plantation">
+    <img src="/images/7 Forks.jpeg" alt="7 Folks Plantation">
 </div> 
 
 
@@ -261,6 +268,11 @@
 
         </p>
     </div>
+
+        <div class="image-container">
+    <img src="/images/Dokolo 02.JPG" alt="Dokolo Plantation">
+</div>
+
 <div class="key-block">
     <h3>Key Characteristics</h3>
 
@@ -289,7 +301,7 @@
             </div>
 
            <div class="image-container">
-    <img src="/images/Dokolo farm 2.JPG" alt="Dokolo Plantation">
+    <img src="/images/Dokolo 01.JPG" alt="Dokolo Plantation">
 </div> 
 
 </section>
