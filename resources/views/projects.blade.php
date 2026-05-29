@@ -5,7 +5,7 @@
 <!-- HERO -->
 <section class="projects-hero">
     <div class="hero-content">
-        <h1>Our Projects</h1>
+        <h1>Projects & Programme Delivery</h1>
         <p>
             Better Globe Forestry LTD operates as an implementation and management platform
 for forestry and agroforestry projects across East Africa.
@@ -19,44 +19,48 @@ for forestry and agroforestry projects across East Africa.
 </section>
 
 <!-- POSITIONING -->
-<section class="projects-positioning">
-    <div class="container">
-        <p class="positioning-text">
-           Our role is to design, establish, and manage projects on behalf of
-         partners, programmes, and project-specific structures. Each project reflects
-         a combination of technical expertise, local engagement, and long-term
-        environmental and economic objectives.
+<section class="projects-positioning" style="padding: 30px 20px 15px;">
 
-        Projects may be structured through partnerships, programmes, or dedicated
-        project vehicles, while Better Globe Forestry ensures consistent and
-        high-quality operational execution on the ground.
+    <div class="container">
+
+        <p class="positioning-text" style="margin-bottom: 18px;">
+            Our role is to design, establish, and manage projects on behalf of
+            partners, programmes, and project-specific structures.
+
+            Each project reflects a combination of technical expertise,
+            local engagement, and long-term environmental and economic objectives.
+
+            Projects may be structured through partnerships, programmes,
+            or dedicated project vehicles, while Better Globe Forestry ensures
+            consistent and high-quality operational execution on the ground.
         </p>
 
-        <div class="positioning-points">
+        <div class="positioning-points" style="margin: 18px 0;">
             <div>Implementation, not ownership</div>
             <div>Long-term operational partner</div>
             <div>Structured, transparent delivery</div>
         </div>
-    </div>
-    
-     <section class="projects-positioning">
-    <div class="container">
-        <p class="positioning-text">Better Globe Forestry does not operate as an asset owner by default.
-It acts as an independent implementation platform, with ownership and
-funding structures defined at project level
+
+        <p class="positioning-text" style="margin: 15px 0 0;">
+            Better Globe Forestry does not operate as an asset owner by default.
+            It acts as an independent implementation platform, with ownership and
+            funding structures defined at project level.
         </p>
+
     </div>
 
 </section>
 
-
-
 <!-- HOW WE WORK -->
-<section class="how-we-work">
-    <h2>How We Work</h2>
-<p class="process-note">
-        Projects are delivered through structured agreements ensuring clarity of roles, responsibilities, and outcomes.
+<section class="how-we-work" style="padding-top: 10px;">
+
+    <h2 class="small-heading">How We Work</h2>
+
+    <p class="process-note">
+        Projects are delivered through structured agreements ensuring clarity
+        of roles, responsibilities, and outcomes.
     </p>
+
     <div class="process-steps">
         <div>1. Initial discussion & scoping</div>
         <div>2. Technical assessment</div>
@@ -71,7 +75,9 @@ funding structures defined at project level
 <section class="delivery-model">
     
     <div class="delivery-overlay">
-        <h2>Service Delivery Model</h2>
+    <h2 style="color: white; position: relative; z-index: 2;">
+        Service Delivery Model
+    </h2>
 
         <div class="model-grid">
             <div><strong>BGF</strong><br>Implementation Platform</div>
@@ -189,7 +195,7 @@ funding structures defined at project level
 </section>
 
 <!-- OFFER LINK -->
-<section class="offer-link">
+<section class="offer-link" style="padding: 20px 20px 10px; margin: 0;">
     <h2>Looking for structured programmes?</h2>
 <p>
         Whether you are developing a commercial forestry project, a CSR programme, or a landscape restoration initiative, 
@@ -205,11 +211,15 @@ funding structures defined at project level
 <!-- FINAL CTA -->
 <section class="final-cta">
 
-    <div class="cta-overlay">
-        <div class="cta-buttons">
-            <a href="#" class="btn-primary">Start a Conversation</a>
-            <a href="#" class="btn-primary">Request a Proposal</a>
+    <div class="cta-image-box">
+
+        <div class="cta-overlay">
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">Start a Conversation</a>
+                <a href="#" class="btn-primary">Request a Proposal</a>
+            </div>
         </div>
+
     </div>
 
 </section>

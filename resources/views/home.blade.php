@@ -32,7 +32,7 @@
 
 <!-- WHO WE ARE -->
 <section class="info-section">
-    <h2>Who We Are</h2>
+    <h2 class="small-heading">Who We Are</h2>
 
     <p>
         Better Globe Forestry Ltd (BGF) is a professional forestry implementation platform operating in Kenya and Uganda.
@@ -47,7 +47,7 @@
 
 <!-- WHAT WE DO -->
 <section class="info-section">
-    <h2>What We Do</h2>
+    <h2 class="small-heading">What We Do</h2>
 
     <p class="text-block">
         We act as the operational and technical backbone of forestry and agroforestry programmes.
@@ -62,7 +62,7 @@
 
 <section class="image-section">
     <div class="container">
-        <img src="{{ asset('images/IMG_0890.JPG') }}" alt="Forestry operations" class="responsive-image">
+        <img src="{{ asset('images/tractor1.jpg') }}" alt="Forestry operations" class="responsive-image">
     </div>
 </section>
 
@@ -98,13 +98,13 @@
 <!-- IMAGE (UNCHANGED) -->
 <section class="image-section">
     <div class="container">
-        <img src="{{ asset('images/101124 Kiambere 048.JPG') }}" alt="Forestry operations" class="responsive-image">
+        <img src="{{ asset('images/Dokolo nursery melia seedlings.jpg') }}" alt="Forestry operations" class="responsive-image">
     </div>
 </section>
 
 <!-- WORKING THROUGH PARTNERSHIP -->
 <section class="info-section">
-    <h2>Working Through Partnership</h2>
+    <h2 class="small-heading">Working Through Partnership</h2>
 
     <p>
         BGF operates as an independent implementation platform, delivering forestry programmes without owning assets by default.
@@ -112,9 +112,15 @@
     </p>
 </section>
 
+<section class="image-section">
+    <div class="container">
+        <img src="{{ asset('images/104.jpg') }}" alt="Forestry operation" class="responsive-image">
+    </div>
+</section>
+
 <!-- WORKING WITH COMMUNITIES -->
 <section class="info-section">
-    <h2>Working With Communities</h2>
+    <h2 class="small-heading">Working With Communities</h2>
 
     <p>
         Sustainable forestry depends on strong local partnerships. BGF works with farmers and communities through
@@ -124,30 +130,42 @@
         livelihoods, and community development.
     </p>
 
-    <img src="{{ asset('images/Ngoce, Mukau Growers SHG.jpg') }}" 
+    <img src="{{ asset('images/Kamwongo FSA Grand opening.jpg') }}" 
      alt="FAQ Image 2" 
      style="width: 100%; max-width: 1000px; height: auto; display: block; margin: 0 auto;">
 </section>
+
 
 <!-- HOW WE WORK -->
 <section class="info-section">
     <h2>How We Work</h2>
 
+    <div class="flow-diagram">
 
-<div class="flow-cta">
+        <div class="flow-box">
+            <span>Partners</span>
+        </div>
 
-    <div class="flow-item">Partners</div>
-    <div class="flow-arrow">→</div>
+        <div class="flow-line"></div>
 
-    <div class="flow-item">Programme Structures</div>
-    <div class="flow-arrow">→</div>
+        <div class="flow-box">
+            <span>Programme Structures</span>
+        </div>
 
-    <div class="flow-item">BGF</div>
-    <div class="flow-arrow">→</div>
+        <div class="flow-line"></div>
 
-    <div class="flow-item">Communities</div>
+        <div class="flow-box">
+            <span>BGF</span>
+        </div>
 
-</div>
+        <div class="flow-line"></div>
+
+        <div class="flow-box">
+            <span>Communities</span>
+        </div>
+
+    </div>
+</section>
 
 
     <p class="text-block">
@@ -177,7 +195,7 @@
 
 <!-- WHAT BGF IS / IS NOT -->
 <section class="info-section">
-    <h2>What BGF Is — and Is Not</h2>
+    <h2 class="small-heading">What BGF Is — and Is Not</h2>
 
     <div class="cards">
 
@@ -200,7 +218,7 @@
 
 <!-- OUR VISION -->
 <section class="info-section">
-    <h2>Our Vision</h2>
+    <h2 class="small-heading">Vision</h2>
 
     <p>
         To contribute to sustainable development in Africa by enabling the transformation of drylands into productive,
@@ -211,7 +229,7 @@
 
 <!-- CTA -->
 <section class="info-section" id="cta">
-    <h2>Engage With Us</h2>
+  <h2 class="small-heading">Engage With Us</h2>
 
     <p>
         Explore how structured forestry programmes can be deployed with BGF,

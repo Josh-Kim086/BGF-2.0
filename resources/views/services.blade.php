@@ -9,8 +9,7 @@
         <div class="container">
             <h1>Forestry Implementation Platform</h1>
             <h3>
-                Enabling structured, large-scale forestry and agroforestry programmes 
-                through professional execution, systems, and long-term operational management.
+                Delivering large-scale forestry and agroforestry through expert management and execution.
             </h3>
 
             <a href="/projects" class="btn-primary">Explore Our Projects</a>
@@ -25,7 +24,8 @@
             Better Globe Forestry acts as an independent implementation platform within structured forestry programmes.
             We design, implement, and manage forestry and agroforestry projects on behalf of partners, investors, and institutions,
             ensuring technical quality, operational continuity, and transparent reporting.</p> <h2></h2> 
-        <p>Better globe forestry does not own project assests by default.It acts as an independent impplementation platform</p>
+        <p>Better globe forestry does not own project assests by default.It acts as an independent impelementation 
+            platform</p>
 
     </div>
 
@@ -57,7 +57,7 @@
     <div class="services-partners">
 
         <div class="partners-image">
-            <img src="{{ asset('images/101124 Kiambere 035.JPG') }}" alt="Our Partners">
+            <img src="{{ asset('images/seed nursing.jpg') }}" alt="Our Partners">
         </div>
 
 
@@ -115,6 +115,12 @@
 
             </div>
         </section>
+
+
+        <div class="partners-image">
+            <img src="{{ asset('images/nursery2.jpg') }}" alt="Our Partners">
+        </div>
+
 
 
         <!-- WHO WE WORK WITH -->

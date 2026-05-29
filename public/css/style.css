@@ -439,7 +439,7 @@ footer {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.3); /* adjust darkness here */
+    background: rgba(0, 0, 0, 0.45); /* adjust darkness here */
 }
 
 /* CONTENT */
@@ -496,24 +496,32 @@ footer {
     list-style: none;
     padding: 0;
     margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .how-we-work-list li {
     position: relative;
+
+    display: inline-block;
+
     background: #f3f4f3;
-    padding: 18px 20px 18px 25px;
+    padding: 16px 20px 16px 26px;
     margin-bottom: 12px;
+
     border-radius: 10px;
     color: #2f4f2f;
     font-weight: 600;
 
-    /* smooth feel */
+    width: auto;
+    max-width: fit-content;
+
     transition: all 0.3s ease;
 
-    /* subtle depth */
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 
-    /* keep your animation */
     opacity: 0;
     transform: translateY(10px);
     animation: fadeInUp 0.6s forwards;
@@ -589,50 +597,67 @@ footer {
     color: #01300f;
 }
 
-
+.small-heading {
+    font-size: 1.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
 
 
 
 /* Cards container */
 .cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: inline-flex;
     flex-wrap: wrap;
-    margin-top: 20px; /* spacing after section text */
+    justify-content: center;
+    gap: 24px;
+    margin-top: 35px;
+    width: 100%;
 }
 
 /* Individual card */
 .card {
-    background: #f6f8f6; /* subtle light grey so it stands out on white page */
-    padding: 20px;
-    width: 280px; /* slightly wider for readability */
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* soft shadow */
-    transition: transform 0.3s, box-shadow 0.3s;
-    font-family: inherit; /* keep same font as rest of page */
+    background: #f8faf8;
+    padding: 26px 22px;
+
+    width: auto;
+    max-width: 220px;
+
+    border-radius: 18px;
+    text-align: left;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+    border: 1px solid rgba(0,0,0,0.04);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background-color 0.3s ease;
+
+    font-family: inherit;
 }
 
 /* Card title */
 .card h3 {
-    margin-bottom: 12px;
-    font-size: 1.15rem;
-    color: #02490b; /* dark green to match forestry theme */
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #02490b;
+    line-height: 1.4;
 }
 
 /* Card text */
 .card p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: #333; /* readable on light background */
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #444;
+    margin: 0;
 }
 
 /* Hover effect */
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    background-color: #93e3a4;
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+    background-color: #eef8f0;
 }
 
 /* Mobile responsive */
@@ -640,10 +665,12 @@ footer {
     .cards {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .card {
         width: 90%;
+        max-width: 340px;
     }
 }
 
@@ -736,41 +763,60 @@ h2 + p {
     object-fit: cover;
 }
 
-/*image about us page */
+.bgf-structure {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
 
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
 
+.bgf-block {
+    background: #f8faf8;
 
+    max-width: 320px;
+    padding: 38px 30px;
 
-.how-we-work-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    max-width: 800px;
-    margin: 20px auto 0 auto;
+    border-radius: 22px;
+
+    text-align: left;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+    border: 1px solid rgba(0,0,0,0.04);
+
+    transition: all 0.3s ease;
+}
+
+.bgf-block:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+
+    background: #eef8f0;
+}
+
+.bgf-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bgf-block h3 {
+    font-size: 1.35rem;
+    margin-bottom: 18px;
+
+    color: #01300f;
+}
+
+.bgf-block p {
     line-height: 1.8;
-    color:#4a6a4a !important;
-    font-family: 'YourFont', sans-serif !important;
-    font-size: 1rem;
+    color: #444;
+
+    margin: 0;
 }
 
-.how-we-work-list li {
-    margin-bottom: 15px;
-}
 
-.how-we-work-list li::marker {
-    color:#4a6a4a !important;
-}
-
-/* List styling */
-.how-we-work-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    max-width: 800px;
-    margin: 20px auto 0 auto;
-    line-height: 1.8;
-    color:#4a6a4a;
-    font-family: 'YourFont', sans-serif;
-    font-size: 1rem;
-}
 
 
 
@@ -1346,6 +1392,24 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     color: #333;
 }
 
+.diagram-arrow {
+    text-align: center;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: #02490b;
+
+    margin: 10px 0;
+}
+
+.small-arrow {
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+
+
+
 /* =========================
    MOBILE RESPONSIVE FIX
 ========================= */
@@ -1397,8 +1461,13 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 .services-hero {
     text-align: center;
 
-    /* ADD THIS */
-    background-image: url('/images/DSC_0245.jpg');
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url('/images/service.jpg');
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1446,6 +1515,8 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 .btn-primary:active {
     transform: translateY(0px);
 }
+
+
 
 
 
@@ -1624,7 +1695,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 .services-cta-container {
     width: 100%;
     height: 400px; /* 🔥 makes it big */
-    background: url('/images/Dokolo nursery melia seedlings.jpg') center/cover no-repeat;
+    background: url('/images/486860064_9589078064513965_5699983833627297544_n.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1847,14 +1918,15 @@ nav a:hover {
 /* =========================
    HERO SECTION
 ========================= */
+
 .projects-hero {
     position: relative;
 
     width: 100%;
-    margin-left: calc(-50vw + 50%); /* 🔥 forces full width */
 
-    height: 450px;
-    margin-bottom: 40px;
+    min-height: 500px;
+
+    margin-bottom: 30px;
 
     display: flex;
     align-items: center;
@@ -1862,7 +1934,15 @@ nav a:hover {
 
     text-align: center;
     color: white;
-    background: url('/images/Dokolo nursery melia seedlings.jpg') center/cover no-repeat;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.45)
+        ),
+        url('/images/Dokolo nursery melia seedlings.jpg') center/cover no-repeat;
+
+    border-radius: 0 0 20px 20px;
 
     overflow: hidden;
 }
@@ -1877,7 +1957,7 @@ nav a:hover {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5); /* adjust as needed */
+    background: rgba(0, 0, 0, 0.20); /* adjust as needed */
     z-index: 1;
 }
 
@@ -1904,7 +1984,7 @@ nav a:hover {
    SECTIONS BASE
 ========================= */
 .projects-page-section {
-    padding: 60px 40px;
+    padding: 40px 25px;
 }
 
 .container {
@@ -1988,25 +2068,25 @@ nav a:hover {
     background-color: #79ea8f;
 }
 
-/* =========================
-   HOW WE WORK
-========================= */
+///***How we Work***////
+
 .how-we-work {
     text-align: center;
     background: #fff;
+    padding: 20px 20px;
 }
 
 .process-steps {
     display: grid;
     text-align: left;
-    gap: 15px;
+    gap: 10px;
     max-width: 600px;
-    margin: 30px auto;
+    margin: 18px auto;
 }
 
 .process-steps div {
-    background: #02490b;
-    padding: 14px 16px;
+    background: #269735;
+    padding: 12px 16px;
     border-radius: 8px;
 
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -2014,8 +2094,50 @@ nav a:hover {
     font-weight: 600; /* 🔥 makes text slightly bold */
     cursor: pointer;
     color: #fff;
-    transition: all 0.25s ease;
+  
 }
+
+.flow-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+    margin: 50px auto;
+
+    max-width: 1100px;
+}
+
+.flow-box {
+    background: #f8faf8;
+
+    padding: 18px 28px;
+    border-radius: 18px;
+
+    font-weight: 600;
+    color: #01300f;
+
+    box-shadow: 0 10px 24px rgba(0,0,0,0.07);
+    border: 1px solid rgba(0,0,0,0.04);
+
+    transition: all 0.3s ease;
+}
+
+.flow-box:hover {
+    transform: translateY(-4px);
+    background: #eef8f0;
+    box-shadow: 0 16px 32px rgba(0,0,0,0.10);
+}
+
+.flow-line {
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, #2d6a4f, #95d5b2);
+    border-radius: 10px;
+}
+
+
 
 /* Hover effect */
 .process-steps div:hover {
@@ -2100,7 +2222,7 @@ nav a:hover {
     position: absolute;
     inset: 0;
 
-    background: transparent;
+    background: rgba(0, 0, 0, 0.55);
 }
 
 /* content sits above overlay */
@@ -2231,7 +2353,7 @@ nav a:hover {
 .photo-strip {
     display: flex;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
     overflow: hidden;
 }
 
@@ -2315,18 +2437,64 @@ nav a:hover {
 /* =========================
    CTA SECTIONS
 ========================= */
+
 .offer-link,
 .final-cta {
     text-align: center;
 }
 
 .final-cta {
-    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+
+    padding: 6px 10px;
 }
 
 .final-cta p {
-    max-width: 700px;
+    max-width: 500px;
     margin: 0 auto 20px auto;
+}
+
+/* IMAGE WRAPPER */
+.cta-image-box {
+    position: relative;
+
+    width: 100%;
+    max-width: 1100px;
+
+    min-height: 420px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url('/images/tractor3.jpg') center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* CONTENT ABOVE IMAGE */
+.cta-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+/* BUTTON GROUP */
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 /* =========================
@@ -2386,14 +2554,7 @@ nav a:hover {
     }
 }
 
-.final-cta {
-    position: relative;
 
-    background: url('/images/DSC_0201.jpg') center/cover no-repeat;
-
-    padding: 100px 20px;
-    text-align: center;
-}
 
 .btn-primary {
     background: #02490b;
@@ -2887,7 +3048,7 @@ nav a:hover {
 /* HERO */
 .partners-hero {
     height: 350px;
-    background: url('/images/img7.JPG') center/cover no-repeat;
+    background: url('/images/seww.jpg') center/cover no-repeat;
 
     display: flex;
     align-items: center;
@@ -2896,12 +3057,23 @@ nav a:hover {
     color: white;
     position: relative;
 }
+/* DARK OVERLAY */
+.partners-hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.50);   /* increase/decrease darkness here */
+
+    z-index: 1;
+}
 
 .partners-hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.5);
+   
 }
 
 .partners-hero-overlay {

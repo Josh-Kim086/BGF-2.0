@@ -95,7 +95,7 @@
         <div class="footer-section">
             <h3>About Us</h3>
             <p>
-    Better Globe Forestry Ltd provides forestry implementation and management services across sustainable forestry
+    Better Globe Forestry Ltd provides forestry implementation and management services in Kenya and Uganda for sustainable forestry
      and agroforestry projects.
 </p>
         </div>

@@ -53,7 +53,7 @@
 </div>
 
     <div class="block">
-        <h3>Structure/Partnerships</h3>
+        <h3>Structure & Partnerships</h3>
         <p>
             The plantation operates within a structured framework where ownership and
             funding may be defined at project level, while Better Globe Forestry ensures
@@ -62,7 +62,7 @@
     </div>
 
     <div class="block">
-        <h3>Status / Evolution</h3>
+        <h3>Status & Evolution</h3>
         <p>
             The project continues to evolve, with ongoing optimisation of silvicultural
             practices, monitoring systems, and long-term planning.
@@ -72,7 +72,7 @@
 </section>
 
 <div class="image-container">
-    <img src="/images/Kiambere Plantation 01.jpg" alt="Kiambere Plantation">
+    <img src="/images/101124 Kiambere 048.JPG" alt="Kiambere Plantation">
 </div>
 
 
@@ -102,7 +102,7 @@
 </section>
 
 <div class="image-container">
-    <img src="/images/Kiambere Plantation 02.jpg" alt="Kiambere Agroforestry Project">
+    <img src="/images/img3.webp" alt="Kiambere Agroforestry Project">
 </div>
 
 <!-- ================= NYONGORO ================= -->
@@ -145,12 +145,12 @@
     </ul>
 </div>
 <div class="image-container">
-    <img src="/images/Nyongoro 02.jpg" alt="Nyongoro Plantation">
+    <img src="/images/20221130_111451.jpg" alt="Nyongoro Plantation">
 </div>
 
 
     <div class="block">
-        <h3>Structure/Partnerships</h3>
+        <h3>Structure & Partnerships</h3>
         <p>The plantation operates within a structured framework where ownership and
            financing are defined separately, while Better Globe Forestry ensures
            consistent implementation.
@@ -158,7 +158,7 @@
     </div>
 
         <div class="block">
-            <h3>Status/Evolution</h3>
+            <h3>Status & Evolution</h3>
             <p>The project continues to mature, with ongoing improvements in plantation
                management techniques and long-term development planning.
             </p>
@@ -167,7 +167,7 @@
 </section>
 
 <div class="image-container">
-    <img src="/images/Nyongoro 01.jpg" alt="Nyongoro Plantation">
+    <img src="/images/mechanical pruning ongoing.jpg" alt="Nyongoro Plantation">
 </div>
 
 
@@ -218,14 +218,14 @@
 
 
     <div class="block">
-        <h3>Structure/Partnership</h3>
+        <h3>Structure & Partnership</h3>
         <p>The programme operates within a broader framework that may involve
            partners, donors, or project-specific arrangements, with implementation
            carried out by Better Globe Forestry.
         </p>
     </div>
         <div class="block">
-            <h3>Status/Evolution</h3>
+            <h3>Status & Evolution</h3>
             <p>The programme continues to scale and stabilise, with ongoing improvements
                in farmer engagement, operational systems, and monitoring capacity
             </p>
@@ -270,7 +270,7 @@
     </div>
 
         <div class="image-container">
-    <img src="/images/Dokolo 02.JPG" alt="Dokolo Plantation">
+    <img src="/images/20230301_122150.jpg" alt="Dokolo Plantation">
 </div>
 
 <div class="key-block">
@@ -286,14 +286,18 @@
 </div>
 
     <div class="block">
-        <h3>Structure/Partnerships</h3>
+        <h3>Structure & Partnerships</h3>
         <p>The project is implemented within a structured framework involving local
            stakeholders and project-level arrangements, aligned with the broader
            institutional model</p>
            </div>
 
+            <div class="image-container">
+    <img src="/images/machinery4.jpg" alt="Dokolo Plantation">
+</div>
+
            <div class="block">
-            <h3>Status Evolution</h3>
+            <h3>Status & Evolution</h3>
                 <p> The project is in a development and expansion phase, with a focus on
                     building farmer confidence, strengthening operations, and adapting
                     methodologies to the local context

@@ -87,18 +87,7 @@
 
 
 
-    <form method="POST" action="{{ route('contact.store') }}">
-    @csrf
 
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <input type="text" name="phone">
-    <input type="text" name="subject">
-
-    <textarea name="message" required></textarea>
-
-    <button type="submit">Send</button>
-</form>
 
 </section>
 @endsection
