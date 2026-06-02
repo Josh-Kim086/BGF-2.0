@@ -57,7 +57,7 @@
 
 
         <!-- RIGHT SIDE FORM -->
-        <div class="contact-form">
+    <div class="contact-form">
             <form>
                 <div class="form-row">
                     <input type="text" placeholder="Your Name">
@@ -73,6 +73,10 @@
         </div>
 
     </div>
+	
+
+
+
 </section>
 
 <section class="contact-newsletter">
@@ -86,6 +90,13 @@
     </div>
 
 
+
+
+@if(session('success'))
+    <div class="success-message">
+        {{ session('success') }}
+    </div>
+@endif
 
 
 

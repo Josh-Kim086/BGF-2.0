@@ -38,17 +38,14 @@
     <div class="nav-item dropdown">
         <a href="{{ route('about') }}">About</a>
 
-        <div class="dropdown-menu">
+ <div class="dropdown-menu">
             <a href="{{ route('about') }}#our-role">Our Role</a>
             <a href="{{ route('about') }}#how-we-work">How We Work</a>
             <a href="{{ route('about') }}#Experience">Experience</a>
             <a href="{{ route('about') }}#Vision">Vision & Mission</a>
-            <a href="{{ route('about') }}#Ecosystem">BGF Ecosystem</a>
+            <a href="{{ route('about') }}#Ecosystem">Ecosystem</a>
         </div>
     </div>
-
-
-
 
 
   <div class="nav-item dropdown">
@@ -56,8 +53,8 @@
 
     <div class="dropdown-menu">
         <a href="{{ route('services') }}#what-we-provide">What We Provide</a>
-        <a href="{{ route('services') }}#core-service-areas">Core Services</a>
-        <a href="{{ route('services') }}#who-we-work-with">Who we Work With</a>
+        <a href="{{ route('services') }}#core-service-areas">Core Services Areas</a>
+        <a href="{{ route('services') }}#who-we-work-with">Who We Work With</a>
     </div>
 </div>
 
@@ -177,7 +174,6 @@ document.querySelectorAll(".dropdown > a").forEach(item => {
     });
 });
 </script>
-
 
 
 
