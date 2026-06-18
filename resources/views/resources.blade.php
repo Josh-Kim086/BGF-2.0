@@ -37,7 +37,7 @@
                     approach.
                 </p>
 
-              <a href="{{ asset('downloads/test.pdf') }}"
+              <a href="{{ asset('downloads/Corporate-Presentation.pdf') }}"
    target="_blank"
    class="btn-primary">
     Download Presentation
