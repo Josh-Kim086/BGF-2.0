@@ -35,8 +35,14 @@ Route::get('/faq', function () {
     return view('faq');
 })->name('faq');
 
+Route::get('/resources', function () {
+    return view('resources');
+})->name('resources');
 
 
 use App\Http\Controllers\ContactMessageController;
 
 Route::post('/contact', [ContactMessageController::class, 'store'])->name('contact.store');
+
+
+

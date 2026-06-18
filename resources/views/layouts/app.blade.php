@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Better Globe Forestry</title>
@@ -39,8 +41,7 @@
         <a href="{{ route('about') }}">About</a>
 
  <div class="dropdown-menu">
-            <a href="{{ route('about') }}#our-role">Our Role</a>
-            <a href="{{ route('about') }}#how-we-work">How We Work</a>
+
             <a href="{{ route('about') }}#Experience">Experience</a>
             <a href="{{ route('about') }}#Vision">Vision & Mission</a>
             <a href="{{ route('about') }}#Ecosystem">Ecosystem</a>
@@ -49,11 +50,11 @@
 
 
   <div class="nav-item dropdown">
-    <a href="{{ route('services') }}">Services</a>
+    <a href="{{ route('services') }}" class="dropdown-toggle">Services</a>
 
     <div class="dropdown-menu">
         <a href="{{ route('services') }}#what-we-provide">What We Provide</a>
-        <a href="{{ route('services') }}#core-service-areas">Core Services Areas</a>
+        <a href="{{ route('services') }}#core-service-areas">Core Services</a>
         <a href="{{ route('services') }}#who-we-work-with">Who We Work With</a>
     </div>
 </div>
@@ -73,6 +74,8 @@
 
 
   <a href="{{ route('partners') }}">Partners</a>
+
+  <a href="{{ route('resources') }}">Resources</a>
 
    <a href="{{ route('contact') }}">Contact</a>
 
@@ -109,6 +112,7 @@
                 </div>
 
                 <div class="footer-links">
+                     <a href="{{ route('resources') }}">Resources</a>
                     <a href="{{ route('contact') }}">Contact</a>
                     <a href="{{ route('partners') }}">Partners</a>
                     <a href="{{ route('faq') }}">FAQs</a>
