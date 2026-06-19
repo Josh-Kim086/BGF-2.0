@@ -63,13 +63,13 @@
     <a href="{{ route('projects') }}" class="dropdown-toggle">Projects</a>
 
   <div class="dropdown-menu">
-    <a href="{{ route('plantations') }}#kiambere">Kiambere</a>
-    <a href="{{ route('plantations') }}#kiambere-agroforestry">Kiambere Agroforestry</a>
-    <a href="{{ route('plantations') }}#nyongoro">Nyongoro</a>
-    <a href="{{ route('plantations') }}#seven-forks">Seven-Forks</a>
-    <a href="{{ route('plantations') }}#dokolo">Dokolo</a>
-</div>
-</div>
+  <a href="{{ route('projects.kiambere') }}">Kiambere</a>
+  <a href="{{ route('projects.kiambere-agroforestry') }}">Kiambere Agroforestry</a>
+  <a href="{{ route('projects.nyongoro') }}">Nyongoro</a>
+  <a href="{{ route('projects.seven-forks') }}">Seven Forks</a>
+  <a href="{{ route('projects.dokolo') }}">Dokolo</a>
+  </div>
+  </div>
 
 
 
