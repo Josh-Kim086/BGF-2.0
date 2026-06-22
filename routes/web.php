@@ -41,6 +41,14 @@ Route::get('/resources', function () {
 })->name('resources');
 
 
+Route::get('/debug-env', function () {
+    return [
+        'app_key' => config('app.key'),
+        'app_env' => config('app.env'),
+        'app_url' => config('app.url'),
+    ];
+});
+
 use App\Http\Controllers\ContactMessageController;
 
 Route::post('/contact', [ContactMessageController::class, 'store'])->name('contact.store');
