@@ -60,16 +60,16 @@
 </div>
 
 <div class="nav-item dropdown">
-    <a href="{{ url('/plantations') }}" class="dropdown-toggle">
+  <a href="/plantations" class="dropdown-toggle">
         Projects
     </a>
 
     <div class="dropdown-menu">
-        <a href="{{ url('/plantations#kiambere') }}">Kiambere</a>
-        <a href="{{ url('/plantations#kiambere-agroforestry') }}">Kiambere Agroforestry</a>
-        <a href="{{ url('/plantations#nyongoro') }}">Nyongoro</a>
-        <a href="{{ url('/plantations#seven-forks') }}">Seven Forks</a>
-        <a href="{{ url('/plantations#dokolo') }}">Dokolo</a>
+        <a href="/plantations#kiambere">Kiambere</a>
+        <a href="/plantations#kiambere-agroforestry">Kiambere Agroforestry</a>
+        <a href="/plantations#nyongoro">Nyongoro</a>
+        <a href="/plantations#seven-forks">Seven Forks</a>
+        <a href="/plantations#dokolo">Dokolo</a>
     </div>
 </div>
 
