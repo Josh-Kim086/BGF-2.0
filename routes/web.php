@@ -20,27 +20,6 @@ Route::get('/projects', function () {
 })->name('projects');
 
 
-Route::get('/projects/kiambere', function () {
-    return view('kiambere');
-})->name('projects.kiambere');
-
-Route::get('/projects/kiambere-agroforestry', function () {
-    return view('kiambere-agroforestry');
-})->name('projects.kiambere-agroforestry');
-
-Route::get('/projects/nyongoro', function () {
-    return view('nyongoro');
-})->name('projects.nyongoro');
-
-Route::get('/projects/seven-forks', function () {
-    return view('seven-forks');
-})->name('projects.seven-forks');
-
-Route::get('/projects/dokolo', function () {
-    return view('dokolo');
-})->name('projects.dokolo');
-
-
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');

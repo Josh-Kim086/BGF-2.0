@@ -124,7 +124,7 @@ for forestry and agroforestry projects across East Africa.
         dryland environment, focused on structured plantation management, species
         performance, and long-term timber development.
     </p>
-  <a href="{{ route('projects.kiambere') }}" class="btn">
+  <a href="{{ route('plantations') }}#kiambere" class="btn">
     View Project
 </a>
 </div>
@@ -139,7 +139,7 @@ for forestry and agroforestry projects across East Africa.
         silvicultural quality, structured plantation management, and long-term
         resource development.
     </p>
-<a href="{{ route('projects.nyongoro') }}" class="btn">
+<a href="{{ route('plantations') }}#nyongoro" class="btn">
     View Project
 </a>
       
@@ -156,7 +156,7 @@ for forestry and agroforestry projects across East Africa.
         ongoing monitoring systems.
     </p>
 
- <a href="{{ route('projects.seven-forks') }}" class="btn">
+<a href="{{ route('plantations') }}#seven-forks" class="btn">
     View Project
 </a>
       
@@ -173,7 +173,7 @@ for forestry and agroforestry projects across East Africa.
         and structured implementation.
     </p>
 
-   <a href="{{ route('projects.dokolo') }}" class="btn">
+  <a href="{{ route('plantations') }}#dokolo" class="btn">
     View Project
 </a>
       
