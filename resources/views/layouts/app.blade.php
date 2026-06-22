@@ -60,7 +60,7 @@
 </div>
 
 <div class="nav-item dropdown">
-  <a href="/plantations" class="dropdown-toggle">
+  <a href="/projects" class="dropdown-toggle">
         Projects
     </a>
 
