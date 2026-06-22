@@ -95,6 +95,19 @@
     </div>
 </section>
 
+<section class="info-section">
+    <h2 class="small-heading">Resource & Downloads</h2>
+
+    <p>Explore BGF's corporate presentation,factsheets,technical resources and selected forestry publications.</p>
+
+<div style="display:flex; justify-content:center; margin:40px 0;">
+    <a href="{{ route('resources') }}" class="btn-primary">
+       
+        View Resources
+    </a>
+</div>
+
+
 <!-- IMAGE (UNCHANGED) -->
 <section class="image-section">
     <div class="container">
@@ -215,6 +228,55 @@
 
     </div>
 </section>
+
+
+<section class="bgf-glance">
+    <div class="container">
+
+        <h2 class="bgf-glance-title">BGF at a Glance</h2>
+
+        <div class="bgf-glance-grid">
+
+            <div class="glance-item">
+                <h3>Established</h3>
+                <p>2004</p>
+            </div>
+
+            <div class="glance-item">
+                <h3>Countries</h3>
+                <p>Kenya & Uganda</p>
+            </div>
+
+            <div class="glance-item">
+                <h3>Farmers Engaged</h3>
+                <p>20,000+</p>
+            </div>
+
+            <div class="glance-item">
+                <h3>Agroforestry Area</h3>
+                <p>12,000+ ha</p>
+            </div>
+
+            <div class="glance-item">
+                <h3>Plantation Area</h3>
+                <p>1,200+ ha</p>
+            </div>
+
+            <div class="glance-item">
+                <h3>Core Programmes</h3>
+                <p>Kiambere, Nyongoro, 7 Forks, Dokolo</p>
+            </div>
+
+            <div class="glance-item full-width">
+                <h3>Focus</h3>
+                <p>Forestry implementation and long-term programme delivery</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
 
 <!-- OUR VISION -->
 <section class="info-section">

@@ -3404,3 +3404,98 @@ nav a:hover {
     background-size:cover;
     background-position:center;
 }
+
+/*BGF at a Glance*/
+
+/* =========================
+   BGF AT A GLANCE SECTION
+========================= */
+
+.bgf-glance {
+    padding: 80px 20px;
+    background: #f7faf7;
+}
+
+.bgf-glance-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #1f3d2b;
+}
+
+.bgf-glance-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.glance-item {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glance-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.glance-item h3 {
+    font-size: 16px;
+    color: #6b7c6f;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.glance-item p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f3d2b;
+}
+
+/* Full width item */
+.glance-item.full-width {
+    grid-column: span 3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bgf-glance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .glance-item.full-width {
+        grid-column: span 1;
+    }
+}
+/* =========================
+   COUNTER HOVER EFFECT
+========================= */
+
+.counter-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Hover state */
+.counter-box:hover {
+    background: #a2eaa8;   /* dark green */
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    border: 1px solid #2f6b3f;
+}
+
+/* Text color change on hover */
+.counter-box:hover h3,
+.counter-box:hover p {
+    color: #ffffff;
+}

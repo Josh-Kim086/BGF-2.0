@@ -26,17 +26,11 @@
 </div>
 
 
-<div id="menu-overlay" onclick="toggleMenu()"></div>
-
     <!-- Navigation -->
     <nav id="nav-menu">
     <a href="{{ route('home') }}">Home</a>
 
 
-
-
-
-    
     <div class="nav-item dropdown">
         <a href="{{ route('about') }}">About</a>
 
