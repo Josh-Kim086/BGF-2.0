@@ -51,10 +51,12 @@
                     A short summary of BGF's history, scale, countries of operation,
                     core services, and current programme footprint.
                 </p>
-
-                <span class="coming-soon">
-                    Available Soon
-                </span>
+             <a href="{{ asset('downloads/BGF-Fact-sheet.pdf') }}"
+   target="_blank"
+   class="btn-primary">
+    Download Fact Sheet
+</a>
+                
             </div>
 
             <div class="resource-card">
