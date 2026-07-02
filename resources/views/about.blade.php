@@ -294,7 +294,7 @@
 
     <div class="diagram-footer">
         <b><p>info@betterglobeforestry.com</p></b>
-        <b><p>www.betterglobeforestry.com</p></b>
+        <b><p>new.betterglobeforestry.org</p></b>
     </div>
 
 </section>

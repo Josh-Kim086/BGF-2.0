@@ -38,7 +38,7 @@
 
             <a href="{{ route('about') }}#Experience">Experience</a>
             <a href="{{ route('about') }}#Vision">Vision & Mission</a>
-            <a href="{{ route('about') }}#Ecosystem">Ecosystem</a>
+            <a href="{{ route('about') }}#Operational-Model">Ecosystem</a>
         </div>
     </div>
 
