@@ -230,7 +230,7 @@
 </section>
 
 
-<section class="bgf-glance">
+<section class="bgf-glance" id="bgf-glance">
     <div class="container">
 
         <h2 class="bgf-glance-title">BGF at a Glance</h2>
