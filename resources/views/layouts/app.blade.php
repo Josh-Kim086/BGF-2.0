@@ -43,7 +43,7 @@
     </div>
 
 
-  <div class="nav-item dropdown">
+<div class="nav-item dropdown">
     <a href="{{ route('services') }}" class="dropdown-toggle">Services</a>
 
     <div class="dropdown-menu">
@@ -52,6 +52,7 @@
         <a href="{{ route('services') }}#who-we-work-with">Who We Work With</a>
     </div>
 </div>
+
 
 <div class="nav-item dropdown">
   <a href="/projects" class="dropdown-toggle">
@@ -190,9 +191,6 @@ function toggleFAQ(element) {
 </script>
 </body>
 </html>
-
-
-
 
 
 

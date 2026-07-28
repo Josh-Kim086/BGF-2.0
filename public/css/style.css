@@ -424,7 +424,7 @@ footer {
 .hero {
     position: relative;
     height: 90vh;
-    background: url('/images/3.jpg') center/cover no-repeat;
+    background: url('/images/main.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2731,32 +2731,52 @@ nav a:hover {
 }
 
 /*custom footer css*/
-.contact-footer {
-    background: #02490b;
-    padding: 40px 20px;
+.contact-newsletter {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.newsletter-box {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
     text-align: center;
-    color: #fff;
 }
 
-.contact-footer .newsletter-form {
-    margin-top: 15px;
+.newsletter-box h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #1d2d44;
+}
+
+.newsletter-form {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
 }
 
-.contact-footer .newsletter-form input {
-    padding: 10px;
+.newsletter-form input {
+    flex: 1;
+    height: 48px;
+    padding: 0 16px;
+    border: 1px solid #dcdcdc;
     border-radius: 6px;
-    border: none;
-    width: 250px;
+    font-size: 15px;
+    box-sizing: border-box;
 }
 
-
-
-
-
+.newsletter-form .btn-primary {
+    flex-shrink: 0;
+    height: 48px;
+    padding: 0 24px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
 /***Plantation**/
 
 /* HERO */
@@ -3499,3 +3519,6 @@ nav a:hover {
 .counter-box:hover p {
     color: #ffffff;
 }
+
+
+

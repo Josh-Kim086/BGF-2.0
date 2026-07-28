@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Http\Middleware;
-
 use Closure;
-
 class SecurityHeaders
 {
     public function handle($request, Closure $next)
@@ -15,7 +12,7 @@ class SecurityHeaders
         $response->headers->set('X-Content-Type-Options', 'nosniff');
         $response->headers->set('Referrer-Policy', 'strict-origin-when-cross-origin');
         $response->headers->set('Permissions-Policy', 'geolocation=(), microphone=(), camera=()');
-        $response->headers->set('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:;");
+        $response->headers->set('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.google.com https://*.googleapis.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: https://*.google.com https://*.gstatic.com; font-src 'self' data: https: https://fonts.gstatic.com; frame-src 'self' https://*.google.com https://www.google.com https://maps.google.com; connect-src 'self' https://*.googleapis.com;");
         
         return $response;
     }

@@ -6,7 +6,7 @@
 <section class="hero">
     <div class="hero-content">
 
-        <h1>BETTER GLOBE FORESTRY LTD</h1>
+        <h1>BETTER GLOBE FORESTRY</h1>
 
         <p class="hero-subtitle">
             Better Globe Forestry is a forestry implementation platform that designs, implements,

@@ -51,7 +51,11 @@ Route::get('/debug-env', function () {
 
 use App\Http\Controllers\ContactMessageController;
 
-Route::post('/contact', [ContactMessageController::class, 'store'])->name('contact.store');
+Route::post('/contact', [ContactMessageController::class, 'store'])
+    ->name('contact.store');
 
 
+use App\Http\Controllers\NewsletterController;
 
+Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])
+    ->name('newsletter.subscribe');

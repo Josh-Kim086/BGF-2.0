@@ -9,14 +9,21 @@ class ContactMessageController extends Controller
 {
     public function store(Request $request)
     {
-        dd($request->all());
-
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email',
-            'subject' => 'required|string|max:255',
-            'message' => 'required'
-        ]);
+        $request->validate(
+            [
+                'name' => 'required|string|max:255',
+                'email' => 'required|email',
+                'subject' => 'required|string|max:255',
+                'message' => 'required'
+            ],
+            [
+                'name.required' => 'Please enter your name.',
+                'email.required' => 'Please enter your email.',
+                'email.email' => 'Please enter a valid email address.',
+                'subject.required' => 'Please enter a subject.',
+                'message.required' => 'Please enter your message.',
+            ]
+        );
 
         ContactMessage::create([
             'name' => $request->name,
@@ -28,6 +35,7 @@ class ContactMessageController extends Controller
             'status' => 'new'
         ]);
 
-        return back()->with('success', 'Message sent successfully!');
+        return redirect('/contact#contact-form')
+            ->with('contact_success', 'Your message has been sent successfully!');
     }
 }
