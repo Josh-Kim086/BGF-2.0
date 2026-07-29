@@ -1,5 +1,15 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/betterg1/public_html
-    - /bin/cp -R * $DEPLOYPATH
+    - export APPPATH=/home2/betterg1/repositories/BGF-2.0
+    - export PUBLICPATH=/home2/betterg1/public_html
+
+    # Remove old public files
+    - /bin/find $PUBLICPATH -mindepth 1 -maxdepth 1 ! -name ".well-known" -exec rm -rf {} \;
+
+    # Copy new public files
+    - /bin/cp -R $APPPATH/public/* $PUBLICPATH/
+
+    # Update Laravel paths
+    - /bin/sed -i "s#../vendor#../repositories/BGF-2.0/vendor#g" $PUBLICPATH/index.php
+    - /bin/sed -i "s#../bootstrap#../repositories/BGF-2.0/bootstrap#g" $PUBLICPATH/index.php
