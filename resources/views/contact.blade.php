@@ -41,7 +41,7 @@
                     Better Globe Forestry Ltd,<br>
                     Olenguruone Ave Kileleshwa,<br>
                     Likoni Rd,<br>
-                    Total Petrol Station Building, 2nd Floor<br><br>
+                    Costalina Petrol Station Building, 2nd Floor<br><br>
 
                     Nairobi, Kenya<br>
                     P.O Box 823-00606
